@@ -1,0 +1,68 @@
+nav {
+    background-color: $primaryColor;
+    height: 11vh;
+    display: flex;
+    padding: 0 4% 0 21%;
+    box-shadow: 0 3px 2px -2px $secondaryShadowColor;
+    form{
+        display: flex;
+        align-self: center;
+        background-color: $secondaryColor;
+        height: 4vh;
+        width: 17vw;
+        border-radius: 10px;
+        .searchIcon {
+            align-self: center;
+            margin: 0 1.5% 0 2.5%;
+            color: white;
+            font-size: 1.67em;
+        }
+        input {
+            font-size: 1.50em;
+            align-self: center;
+            height: 4vh;
+            width: 14vw;
+            color: #ffffff;
+            background-color: $secondaryColor;
+            &:focus{
+                outline: none;
+            }
+            &:focus::placeholder {
+                color: transparent;
+            }
+            &::placeholder{
+                font-size: 0.92em;
+                color: #e2e2e2;
+            }
+        }
+    }
+    ul {
+        width: 74%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        li{
+            margin: 0 2%;
+            img {
+                height: 9vh;
+                width: 0.07vw;
+            }
+            a {
+                font-family: $secondaryFontStack;
+                color: white;
+                font-size: 1.5em;
+                letter-spacing: 0.04em;
+            }
+            .shoppingCart {
+                font-size: 1.95em;
+            }
+            .loginButton {
+                @extend %loginButtonStyle;
+            }
+
+            }
+        }
+    }
+    button {
+        display: none;
+    }

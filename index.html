@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eLearning Untitled Project</title>
     <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -16,46 +17,46 @@
           </span>
         </button>
             <form action="#" method="GET" id="searchBarWrapper">
-                <span class="iconify" data-icon="ant-design:search-outlined" data-inline="false"></span>
+                <iconify-icon class="iconify searchIcon" data-icon="ant-design:search-outlined"></iconify-icon>
                 <input type="text" placeholder="BUSCAR">
             </form>
         <ul id="navLinks">
             <li><a href=#aboutus>NOSOTROS</a></li>
-            <li><a href=#>CATEGORÍAS</a></li>
+            <li><a href=#>CATEGORIAS</a></li>
             <li><img src="assets/Line1.png"></li>
-            <li><a href="#"><img src="assets/shoppingCart.png"></a></li>
-            <li><a href="#">ENTRAR</a></li>
+            <li><a href="#"><span class="iconify shoppingCart" data-icon="fa:shopping-cart" data-inline="false"></span></a></li>
+            <li><a class="loginButton" href="#">ENTRAR</a></li>
         </ul>
     </nav>
     <section id="specialAd">
         <p>DESCUENTOS EN CURSOS, OFERTA ESPECIAL</p>
-        <p>EXPIRA EN: ¡4 DÍAS!</p>
+        <p>EXPIRA EN: ¡4 DIAS!</p>
     </section>
-    <main>
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-9.93,55.35 C155.98,203.39 297.06,-29.50 503.61,82.99 L530.13,-78.84 L0.00,0.00 Z" style="stroke: none; fill: #08f;"></path></svg>
+    <main class="LP">
         <div class="contentWrapper">
-            <h1>Aprendizaje sin barreras.</h1>
-            <p>No te pierdas esta gran oportunidad de aprendizaje y reservá tu curso.</p>
-            <a href="#" class="bookingsButton">Reservá tu cupo</a>
-        </div>
-        <div class="mainImageWrapper">
+            <div class="textContentWrapper">
+                <h1>Aprendizaje sin barreras.</h1>
+                <p>No te pierdas esta gran oportunidad de aprendizaje y reservá tu curso.</p>
+                <a href="#" class="bookingsButton">Reservá tu cupo</a>
+            </div>
             <img src="assets/mainImage.png">
+            <div class="svgContainer"><svg viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M-16.13,27.73 C247.40,213.25 289.73,-143.97 530.70,78.05 L500.00,150.00 L0.00,150.00 Z"></path></svg></div>
         </div>
     </main>
     <section id="features">
         <h2>TE OFRECEMOS</h2>
         <div class="featureWrapper">
-            <img src="assets/feature1.png" alt="un candado abierto">
+            <span class="iconify" data-icon="bx:bxs-lock-open" data-inline="false"></span>
             <h2>Contenido Accesible</h2>
             <p>Cursos creados para personas con discapacidad.</p>
         </div>
         <div class="featureWrapper">
-            <img src="assets/feature2.png" alt="dos flechas posicionadas de manera retroactiva">
+            <span class="iconify" data-icon="zmdi:refresh" data-inline="false"></span>
             <h2>Constante Actualización</h2>
             <p>Contenido actual y relevante</p>
         </div>
         <div class="featureWrapper">
-            <img src="assets/feature3.png" alt="un certificado">
+            <span class="iconify" data-icon="wpf:diploma-1" data-inline="false"></span>
             <h2>Tutores Especializados</h2>
             <p>Contenido impartido sólo por los mejores profesores de cada área</p>
         </div>

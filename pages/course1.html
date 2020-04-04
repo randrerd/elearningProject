@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Overview</title>
     <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
@@ -16,18 +17,18 @@
           </span>
         </button>
             <form action="#" method="GET" id="searchBarWrapper">
-                <img id="searchIcon" src="assets/searchIcon.png">
+                <span class="iconify searchIcon" data-icon="ant-design:search-outlined" data-inline="false"></span>
                 <input type="text" placeholder="BUSCAR">
             </form>
         <ul id="navLinks">
             <li><a href=#aboutus>NOSOTROS</a></li>
             <li><a href=#>CATEGORÍAS</a></li>
             <li><img src="assets/Line1.png"></li>
-            <li><a href="#"><img src="assets/shoppingCart.png"></a></li>
+            <li><a href="#"><span class="iconify" data-icon="ant-design:shopping-cart-outlined" data-inline="false"></span></a></li>
             <li><a href="#">ENTRAR</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="courseOverviewPage">
         <h1>Reclutamiento Para Principiantes</h1>
         <div class="contentWrapper">
             <p>Aprendé lo necesario para reclutar a
@@ -60,7 +61,7 @@
             <a href="#" class="addtoCartButton">Agregar al Carrito</a>
         </div>
     </main>
-    <section class="midSection">
+    <section class="midSection courseOverviewPage">
         <div class="features">
             <h2>REQUERIMIENTOS</h2>
             <p class="blue">10</p><p> Artículos.</p>
@@ -76,7 +77,7 @@
             <p>Negociar acuerdos de compensación con nuevos empleados.</p>
         </div>
     </section>
-    <section class="courseContents">
+    <section class="courseContents courseOverviewPage">
         <h1>CONTENIDO DEL CURSO</h1>
         <div class="contentWrapper">
             <div class="itemWrapper">

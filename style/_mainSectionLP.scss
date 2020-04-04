@@ -1,0 +1,54 @@
+main.LP{
+    height: 76.5vh;
+    @extend %gradientBackgroundLP;
+    .contentWrapper{
+        display: flex;
+        justify-content: flex-start;
+        .textContentWrapper {
+            margin: 1% 13%;
+            display: flex;
+            flex-direction: column;
+            h1 {
+                color: white;
+                font-family: $primaryFontStack;
+                font-size: 8em;
+                width: 80vw;
+                letter-spacing: -0.09em;
+            }
+            p {
+                color: white;
+                font-family: $secondaryFontStack;
+                font-size: 3em;
+                width: 35vw;
+                margin: 2% 0 4% 0;
+            }
+            a {
+                @extend %primaryButtonStyle;
+            }
+        }
+        img {
+            max-width: 75em;
+            height: 50em;
+            display: flex;
+            position: absolute;
+            bottom: 8.5em;
+            right: 0;
+        }
+    }
+    .svgContainer{
+        position: absolute;
+        height: 35vh;
+        overflow: hidden;
+        width: 100%;
+        top: 56em;
+        filter: drop-shadow(0px -2px 2px #767285);
+    }
+    svg{
+        height: 100%;
+        width: 100%;
+        path {
+            stroke: none; 
+            fill: white;
+        }
+    }
+}
