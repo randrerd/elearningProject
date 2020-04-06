@@ -90,6 +90,15 @@ nav ul li a {
 nav ul li .shoppingCart {
   font-size: 1.95em;
 }
+@media only screen and (max-width: 900px) {
+  nav form {
+    height: 3vh;
+  }
+  nav form input {
+    height: 3vh;
+  }
+}
+
 button {
   display: none;
 }
@@ -123,6 +132,7 @@ main.LP .contentWrapper .textContentWrapper {
   margin: 1% 13%;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 main.LP .contentWrapper .textContentWrapper h1 {
   color: white;
@@ -139,20 +149,20 @@ main.LP .contentWrapper .textContentWrapper p {
   margin: 2% 0 4% 0;
 }
 main.LP .contentWrapper img {
-  max-width: 75em;
   height: 50em;
   display: flex;
   position: absolute;
-  bottom: 8.5em;
   right: 0;
+  z-index: 1;
 }
 main.LP .svgContainer {
   position: absolute;
-  height: 21vh;
+  height: 35vh;
   overflow: hidden;
   width: 100%;
   top: 56em;
   filter: drop-shadow(0px -2px 2px #767285);
+  z-index: 3;
 }
 main.LP svg {
   height: 100%;
@@ -166,21 +176,38 @@ main.LP svg path {
   main.LP {
     height: 68vh;
   }
+  main.LP .contentWrapper .textContentWrapper {
+    z-index: 3;
+  }
   main.LP .contentWrapper img {
-    bottom: 23em;
-    max-width: 67em;
+    z-index: 1;
   }
   main.LP .svgContainer {
     height: 27vh;
+    z-index: 2;
   }
 }
 @media only screen and (max-width: 900px) {
   main.LP {
-    height: 60vh;
+    height: 50vh;
   }
   main.LP .contentWrapper img {
-    max-width: 65em;
-    bottom: 22em;
+    height: 41em;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  main.LP .contentWrapper .textContentWrapper {
+    margin: 3% 13%;
+  }
+  main.LP .contentWrapper .textContentWrapper h1 {
+    font-size: 10em;
+  }
+  main.LP .contentWrapper img {
+    height: 69em;
+  }
+  main.LP .svgContainer {
+    height: 35vh;
+    top: 77em;
   }
 }
 

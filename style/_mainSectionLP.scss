@@ -8,6 +8,7 @@ main.LP{
             margin: 1% 13%;
             display: flex;
             flex-direction: column;
+            z-index: 2;
             h1 {
                 color: white;
                 font-family: $primaryFontStack;
@@ -27,21 +28,21 @@ main.LP{
             }
         }
         img {
-            max-width: 75em;
             height: 50em;
             display: flex;
             position: absolute;
-            bottom: 8.5em;
             right: 0;
+            z-index: 1;
         }
     }
     .svgContainer{
         position: absolute;
-        height: 21vh;
+        height: 35vh;
         overflow: hidden;
         width: 100%;
         top: 56em;
         filter: drop-shadow(0px -2px 2px #767285);
+        z-index: 3;
     }
     svg{
         height: 100%;
@@ -54,22 +55,41 @@ main.LP{
     @include responsive(tab-land) {
         height: 68vh;
         .contentWrapper{
+        .textContentWrapper {
+            z-index: 3;
+        }
         img {
-            bottom: 23em;
-            max-width: 67em;
+            z-index: 1;
         }
     }
     .svgContainer {
         height: 27vh;
+        z-index: 2;
     }
     }
     @include responsive(tab-port) {
-        height: 60vh;
+        height: 50vh;
         .contentWrapper{
             img {
-                max-width: 65em;
-                bottom: 22em;
+                height: 41em;
             }
+        }
+    }
+    @include responsive(big-desktop){
+        .contentWrapper {
+            .textContentWrapper{
+                margin: 3% 13%;
+                h1 {
+                    font-size: 10em;
+                }
+            }
+            img {
+                height: 69em;
+            }
+        }
+        .svgContainer {
+            height: 35vh;
+            top: 77em;
         }
     }
 }
