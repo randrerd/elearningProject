@@ -71,6 +71,40 @@ nav {
             }
         }
     }
-    button {
+    .hamburger {
         display: none;
     }
+@include responsive(phone){
+    nav {
+            height: 8vh;
+            padding: 0 4% 0 8%;
+            justify-content: space-between;
+        form {
+            width: 34vw;
+            height: 5vh;
+            border-radius: 26px;
+            transition-duration: .4s;
+            .searchIcon {
+                font-size: 4.5em;
+            }
+            input {
+                width: 21vw;
+                height: 5vh;
+                font-size: 2em;
+                transition-duration: .4s;
+            &:focus {
+                width: 47vw;
+            }
+            }
+            &:focus-within {
+                width: 64vw;
+            }
+        }
+        ul {
+            display: none;
+        }
+    }
+    .hamburger{
+        display: block;
+    }
+}

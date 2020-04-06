@@ -53,7 +53,6 @@ main.LP{
         }
     }
     @include responsive(tab-land) {
-        height: 68vh;
         .contentWrapper{
         .textContentWrapper {
             z-index: 3;
@@ -63,12 +62,10 @@ main.LP{
         }
     }
     .svgContainer {
-        height: 27vh;
         z-index: 2;
     }
     }
     @include responsive(tab-port) {
-        height: 50vh;
         .contentWrapper{
             img {
                 height: 41em;
@@ -88,7 +85,6 @@ main.LP{
             }
         }
         .svgContainer {
-            height: 35vh;
             top: 77em;
         }
     }

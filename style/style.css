@@ -29,6 +29,133 @@ main.LP .contentWrapper .textContentWrapper a:hover {
   color: #2164ef;
 }
 
+/*COLORS*/
+main.LP {
+  background-image: linear-gradient(180deg, #5e308c 19.21%, #7256ea 102.39%);
+}
+
+nav ul li .loginButton {
+  padding: 5.5% 17%;
+  background-color: #2164ef;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+nav ul li .loginButton:hover {
+  background-color: #ffffff;
+  color: #2164ef;
+}
+
+main.LP .contentWrapper .textContentWrapper a {
+  font-size: 2.5em;
+  font-family: "Lato", Arial, sans-serif;
+  width: max-content;
+  background-color: #2164ef;
+  border-radius: 15px;
+  transition-duration: 0.4s;
+  padding: 0.5em 1em;
+  color: white;
+}
+main.LP .contentWrapper .textContentWrapper a:hover {
+  background-color: white;
+  color: #2164ef;
+}
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 8px 8px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: white;
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+/*
+ * Elastic
+ */
+.hamburger--elastic .hamburger-inner {
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.hamburger--elastic .hamburger-inner::before {
+  top: 10px;
+  transition: opacity 0.125s 0.275s ease;
+}
+.hamburger--elastic .hamburger-inner::after {
+  top: 20px;
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.hamburger--elastic.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(135deg);
+  transition-delay: 0.075s;
+}
+.hamburger--elastic.is-active .hamburger-inner::before {
+  transition-delay: 0s;
+  opacity: 0;
+}
+.hamburger--elastic.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-270deg);
+  transition-delay: 0.075s;
+}
+
 nav {
   background-color: #5e308c;
   height: 11vh;
@@ -99,10 +226,45 @@ nav ul li .shoppingCart {
   }
 }
 
-button {
+.hamburger {
   display: none;
 }
 
+@media only screen and (max-width: 600px) {
+  nav {
+    height: 8vh;
+    padding: 0 4% 0 8%;
+    justify-content: space-between;
+  }
+  nav form {
+    width: 34vw;
+    height: 5vh;
+    border-radius: 26px;
+    transition-duration: 0.4s;
+  }
+  nav form .searchIcon {
+    font-size: 4.5em;
+  }
+  nav form input {
+    width: 21vw;
+    height: 5vh;
+    font-size: 2em;
+    transition-duration: 0.4s;
+  }
+  nav form input:focus {
+    width: 47vw;
+  }
+  nav form:focus-within {
+    width: 64vw;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
 #specialAd {
   height: 9.5vh;
   background-color: #2164ef;
@@ -173,9 +335,6 @@ main.LP svg path {
   fill: white;
 }
 @media only screen and (max-width: 1401px) {
-  main.LP {
-    height: 68vh;
-  }
   main.LP .contentWrapper .textContentWrapper {
     z-index: 3;
   }
@@ -183,14 +342,10 @@ main.LP svg path {
     z-index: 1;
   }
   main.LP .svgContainer {
-    height: 27vh;
     z-index: 2;
   }
 }
 @media only screen and (max-width: 900px) {
-  main.LP {
-    height: 50vh;
-  }
   main.LP .contentWrapper img {
     height: 41em;
   }
@@ -206,7 +361,6 @@ main.LP svg path {
     height: 69em;
   }
   main.LP .svgContainer {
-    height: 35vh;
     top: 77em;
   }
 }
