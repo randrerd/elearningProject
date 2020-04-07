@@ -1,0 +1,52 @@
+#programs {
+    padding: 1% 8%;
+    h2 {
+        font-family: $primaryFontStack;
+        color: $secondaryColor;
+        font-size: 4em;
+        font-weight: 500;
+    }
+    .main-carousel{
+        padding: 2% 4%;
+        border: none;
+        .flickity-button{
+            background: $secondaryColor;
+        }
+        .flickity-button-icon {
+            fill: white;
+        }
+        .carousel-cell{
+            padding-top: 1%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            margin-right: 1%;
+            border: 1px solid lightgray;
+            margin-bottom: 1%;
+            align-items: center;
+            text-align: center;
+            box-shadow: 2px 2px 3px rgb(184, 190, 196);
+            img {
+                width: 17vw;
+            }
+            h3 {
+                margin: 1% 2%;
+                font-family: $secondaryFontStack;
+                color: $primaryColor;
+                font-size: 3em;
+            }
+            p {
+                font-family: $secondaryFontStack;
+                font-size: 1.5em;
+            }
+            a {
+                @extend %primaryButtonStyle;
+                padding: 1% 1%;
+                border-radius: 0;
+                width: 20vw;
+                margin: 3%;
+                border: 1px solid $secondaryColor;
+            }
+        }
+    }
+}

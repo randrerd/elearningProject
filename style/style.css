@@ -14,7 +14,7 @@ nav ul li .loginButton:hover {
   color: #2164ef;
 }
 
-main.LP .contentWrapper .textContentWrapper a {
+#programs .main-carousel .carousel-cell a, main.LP .contentWrapper .textContentWrapper a {
   font-size: 2.5em;
   font-family: "Lato", Arial, sans-serif;
   width: max-content;
@@ -24,7 +24,7 @@ main.LP .contentWrapper .textContentWrapper a {
   padding: 0.5em 1em;
   color: white;
 }
-main.LP .contentWrapper .textContentWrapper a:hover {
+#programs .main-carousel .carousel-cell a:hover, main.LP .contentWrapper .textContentWrapper a:hover {
   background-color: white;
   color: #2164ef;
 }
@@ -45,7 +45,7 @@ nav ul li .loginButton:hover {
   color: #2164ef;
 }
 
-main.LP .contentWrapper .textContentWrapper a {
+#programs .main-carousel .carousel-cell a, main.LP .contentWrapper .textContentWrapper a {
   font-size: 2.5em;
   font-family: "Lato", Arial, sans-serif;
   width: max-content;
@@ -55,7 +55,7 @@ main.LP .contentWrapper .textContentWrapper a {
   padding: 0.5em 1em;
   color: white;
 }
-main.LP .contentWrapper .textContentWrapper a:hover {
+#programs .main-carousel .carousel-cell a:hover, main.LP .contentWrapper .textContentWrapper a:hover {
   background-color: white;
   color: #2164ef;
 }
@@ -327,7 +327,7 @@ main.LP .svgContainer {
   height: 30%;
   overflow: hidden;
   width: 100%;
-  filter: drop-shadow(0px -2px 2px #767285);
+  filter: drop-shadow(0px -3px 2px #6d57ac);
   z-index: 3;
 }
 main.LP svg {
@@ -407,6 +407,58 @@ main.LP svg path {
   text-align: center;
   width: 50%;
   font-family: "Lato", Arial, sans-serif;
+}
+
+#programs {
+  padding: 1% 8%;
+}
+#programs h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #2164ef;
+  font-size: 4em;
+  font-weight: 500;
+}
+#programs .main-carousel {
+  padding: 2% 4%;
+  border: none;
+}
+#programs .main-carousel .flickity-button {
+  background: #2164ef;
+}
+#programs .main-carousel .flickity-button-icon {
+  fill: white;
+}
+#programs .main-carousel .carousel-cell {
+  padding-top: 1%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1%;
+  border: 1px solid lightgray;
+  margin-bottom: 1%;
+  align-items: center;
+  text-align: center;
+  box-shadow: 2px 2px 3px #b8bec4;
+}
+#programs .main-carousel .carousel-cell img {
+  width: 17vw;
+}
+#programs .main-carousel .carousel-cell h3 {
+  margin: 1% 2%;
+  font-family: "Lato", Arial, sans-serif;
+  color: #5e308c;
+  font-size: 3em;
+}
+#programs .main-carousel .carousel-cell p {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1.5em;
+}
+#programs .main-carousel .carousel-cell a {
+  padding: 1% 1%;
+  border-radius: 0;
+  width: 20vw;
+  margin: 3%;
+  border: 1px solid #2164ef;
 }
 
 * {
