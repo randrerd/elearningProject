@@ -16,6 +16,7 @@
         .carousel-cell{
             padding-top: 1%;
             width: 29%;
+            max-width: 19.5vw;
             display: flex;
             flex-direction: column;
             margin-right: 1%;
@@ -41,7 +42,7 @@
                 @extend %primaryButtonStyle;
                 padding: 1% 1%;
                 border-radius: 0;
-                width: 19vw;
+                width: 18vw;
                 margin: 3%;
                 border: 1px solid $secondaryColor;
             }
