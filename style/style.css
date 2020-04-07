@@ -495,13 +495,13 @@ main.LP svg path {
 }
 
 footer {
-  height: 15vh;
+  height: 20vh;
   padding: 0 11%;
   display: flex;
   background-color: #5e308c;
 }
 footer .socialMediaLinks {
-  width: 7vw;
+  width: 11%;
   text-align: left;
 }
 footer ul {
@@ -539,7 +539,8 @@ footer .newsletterWrap p {
   margin-bottom: 3%;
 }
 footer .newsletterWrap form {
-  height: 3.5vh;
+  height: 3.75vh;
+  width: 17vw;
 }
 footer .newsletterWrap form .newsletterBar {
   background: transparent;
@@ -548,6 +549,7 @@ footer .newsletterWrap form .newsletterBar {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   height: 100%;
+  width: 75%;
   transition-duration: 0.4s;
 }
 footer .newsletterWrap form .newsletterBar:focus {
@@ -565,7 +567,7 @@ footer .newsletterWrap form .newsletterSubmitButton {
   background-color: #2164ef;
   color: white;
   height: 110%;
-  width: 3vw;
+  width: 23%;
   transition-duration: 0.4s;
   border: 1px solid #2164ef;
   border-radius: 8px;

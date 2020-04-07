@@ -1,10 +1,10 @@
 footer {
-    height: 15vh;
+    height: 20vh;
     padding: 0 11%;
     display: flex;
     background-color: $primaryColor;
     .socialMediaLinks {
-        width: 7vw;
+        width: 11%;
         text-align: left;
     }
     ul {
@@ -41,7 +41,8 @@ footer {
             margin-bottom: 3%;
         }
         form {
-            height: 3.5vh;
+            height: 3.75vh;
+            width: 17vw;
             .newsletterBar {
                 background: transparent;
                 border: 1px solid white;
@@ -49,6 +50,7 @@ footer {
                 border-top-right-radius: 2px;
                 border-bottom-right-radius: 2px;
                 height: 100%;
+                width: 75%;
                 transition-duration: .4s;
                 &:focus {
                     background-color: rgb(230, 184, 230);
@@ -66,7 +68,7 @@ footer {
                 background-color: $secondaryColor;
                 color: white;
                 height: 110%;
-                width: 3vw;
+                width: 23%;
                 transition-duration: .4s;
                 border: 1px solid $secondaryColor;
                 border-radius: 8px;
