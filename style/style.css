@@ -422,6 +422,9 @@ main.LP svg path {
 #programs {
   margin: 3.5% 11%;
 }
+#programs h2 {
+  min-height: 9vh;
+}
 #programs .main-carousel {
   padding: 2% 4%;
   margin-bottom: 8%;
@@ -493,9 +496,21 @@ main.LP svg path {
 
 footer {
   height: 15vh;
+  padding: 0 11%;
   display: flex;
-  justify-content: space-evenly;
   background-color: #5e308c;
+}
+footer .socialMediaLinks {
+  width: 7vw;
+  text-align: left;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 15vw;
+  text-align: center;
+  margin-right: 4%;
 }
 footer ul li {
   display: flex;
@@ -506,9 +521,60 @@ footer ul li a {
   color: white;
   font-size: 1.5em;
   font-family: "Lato", Arial, sans-serif;
+  margin: 0.2em 0.2em;
 }
 footer ul li a svg {
   margin-right: 3%;
+  width: 20px;
+}
+footer .newsletterWrap {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+footer .newsletterWrap p {
+  color: white;
+  font-size: 1.5em;
+  font-family: "Lato", Arial, sans-serif;
+  margin-bottom: 3%;
+}
+footer .newsletterWrap form {
+  height: 3.5vh;
+}
+footer .newsletterWrap form .newsletterBar {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  height: 100%;
+  transition-duration: 0.4s;
+}
+footer .newsletterWrap form .newsletterBar:focus {
+  background-color: #e6b8e6;
+  outline: none;
+}
+footer .newsletterWrap form .newsletterBar::placeholder {
+  color: white;
+  padding-left: 4%;
+}
+footer .newsletterWrap form .newsletterBar:focus::placeholder {
+  color: transparent;
+}
+footer .newsletterWrap form .newsletterSubmitButton {
+  background-color: #2164ef;
+  color: white;
+  height: 110%;
+  width: 3vw;
+  transition-duration: 0.4s;
+  border: 1px solid #2164ef;
+  border-radius: 8px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+footer .newsletterWrap form .newsletterSubmitButton:hover {
+  background-color: #ffffff;
+  color: #2164ef;
 }
 
 * {

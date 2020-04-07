@@ -2,6 +2,7 @@
     margin: 3.5% 11%;
     h2 {
         @extend %secondaryHeading;
+        min-height: 9vh;
     }
     .main-carousel{
         padding: 2% 4%;
