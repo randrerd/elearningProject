@@ -1,13 +1,11 @@
 #programs {
-    padding: 1% 8%;
+    margin: 3.5% 11%;
     h2 {
-        font-family: $primaryFontStack;
-        color: $secondaryColor;
-        font-size: 4em;
-        font-weight: 500;
+        @extend %secondaryHeading;
     }
     .main-carousel{
         padding: 2% 4%;
+        margin-bottom: 8%;
         border: none;
         .flickity-button{
             background: $secondaryColor;
@@ -17,7 +15,7 @@
         }
         .carousel-cell{
             padding-top: 1%;
-            width: 30%;
+            width: 29%;
             display: flex;
             flex-direction: column;
             margin-right: 1%;
@@ -43,7 +41,7 @@
                 @extend %primaryButtonStyle;
                 padding: 1% 1%;
                 border-radius: 0;
-                width: 20vw;
+                width: 19vw;
                 margin: 3%;
                 border: 1px solid $secondaryColor;
             }

@@ -1,0 +1,30 @@
+#aboutUs {
+    display: flex;
+    margin: 3.5% 11%;
+    .contentWrapper {
+        h2 {
+            @extend %secondaryHeading;
+        }
+        p {
+            width: 80%;
+            font-size: 2em;
+            margin-top: 6%;
+            font-family: $secondaryFontStack;
+        }
+        ul {
+            li {
+                margin: 3% 2%;
+                font-size: 2em;
+                font-family: $secondaryFontStack;
+                &::before {
+                    content: "\2022";
+                    color: $primaryColor;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+        }
+    }
+}

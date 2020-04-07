@@ -1,17 +1,15 @@
 #features {
     display: flex;
     flex-direction: column;
-    padding: 0 8%;
+    margin: 3.5% 11%;
+    margin-top: 0;
     h2 {
-        font-family: $primaryFontStack;
-        color: $secondaryColor;
-        font-weight: 500;
-        font-size: 4em;
+        @extend %secondaryHeading;
         align-self: flex-end;
     }
     .featuresContainer {
         display: flex;
-        padding: 4% 0;
+        padding-top: 4%;
         .featureWrapper {
             display: flex;
             flex-direction: column;

@@ -1,19 +1,18 @@
 $primaryFontStack: 'Montserrat', Arial, sans-serif;
 $secondaryFontStack: 'Lato', Arial, sans-serif;
 
-/*COLORS*/
 
 $primaryFontColor: #50129f;
 $secondaryColor: #2164ef;
 $secondaryShadowColor: #193c83;
 $thirdColor: white;
 $primaryColor: #5e308c;
-
 $alternativeColor: #2064ef;
-
 %gradientBackgroundLP{ 
     background-image:linear-gradient(180deg, #5e308c 19.21%,#7256ea 102.39%);
 }
+
+
 
 %loginButtonStyle {
     padding: 5.5% 17%;
@@ -25,7 +24,6 @@ $alternativeColor: #2064ef;
     color: $secondaryColor;
 }
 }
-
 %primaryButtonStyle {
     font-size: 2.5em;
     font-family: $secondaryFontStack;
@@ -41,3 +39,10 @@ $alternativeColor: #2064ef;
     }
 }
 
+
+%secondaryHeading {
+        font-family: $primaryFontStack;
+        color: $secondaryColor;
+        font-weight: 500;
+        font-size: 4.5em;
+}
