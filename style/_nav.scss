@@ -4,107 +4,133 @@ nav {
     display: flex;
     padding: 0 4% 0 21%;
     box-shadow: 0 3px 2px -2px $secondaryShadowColor;
-    form{
+
+    form {
         display: flex;
         align-self: center;
         background-color: $secondaryColor;
         height: 4vh;
         width: 17vw;
         border-radius: 10px;
+
         .searchIcon {
             align-self: center;
             margin: 0 1.5% 0 2.5%;
             color: white;
             font-size: 1.67em;
         }
+
         input {
             font-size: 1.50em;
             align-self: center;
             height: 4vh;
-            width: 14vw;
+            width: 75%;
             color: #ffffff;
             background-color: $secondaryColor;
-            &:focus{
+
+            &:focus {
                 outline: none;
             }
+
             &:focus::placeholder {
                 color: transparent;
             }
-            &::placeholder{
+
+            &::placeholder {
                 font-size: 0.92em;
                 color: #e2e2e2;
             }
         }
     }
+
     ul {
         width: 74%;
         justify-content: center;
         align-items: center;
         display: flex;
-        li{
+
+        li {
             margin: 0 2%;
+
             img {
                 height: 9vh;
                 width: 0.07vw;
             }
+
             a {
                 font-family: $secondaryFontStack;
                 color: white;
                 font-size: 1.5em;
                 letter-spacing: 0.04em;
             }
+
             .shoppingCart {
                 font-size: 1.95em;
             }
+
             .loginButton {
                 @extend %loginButtonStyle;
             }
 
-            }
         }
-        @include responsive(tab-port){
-            form{
+    }
+
+    @include responsive(tab-port) {
+        padding: 0 15%;
+
+        form {
+            height: 3vh;
+            width: 26vw;
+
+            input {
                 height: 3vh;
-                input {
-                    height: 3vh;
-                }
             }
         }
     }
-    .hamburger {
-        display: none;
-    }
-@include responsive(phone){
-    nav {
+}
+
+.hamburger {
+    display: none;
+}
+
+    @include responsive(phone) {
+        nav {
             height: 8vh;
             padding: 0 4% 0 8%;
             justify-content: space-between;
-        form {
-            width: 34vw;
-            height: 5vh;
-            border-radius: 26px;
-            transition-duration: .4s;
-            .searchIcon {
-                font-size: 4.5em;
-            }
-            input {
-                width: 21vw;
+
+            form {
+                width: 34vw;
                 height: 5vh;
-                font-size: 2em;
+                border-radius: 26px;
                 transition-duration: .4s;
-            &:focus {
-                width: 47vw;
+
+                .searchIcon {
+                    font-size: 4.5em;
+                }
+
+                input {
+                    width: 21vw;
+                    height: 5vh;
+                    font-size: 2em;
+                    transition-duration: .4s;
+
+                    &:focus {
+                        width: 47vw;
+                    }
+                }
+
+                &:focus-within {
+                    width: 64vw;
+                }
             }
-            }
-            &:focus-within {
-                width: 64vw;
+
+            ul {
+                display: none;
             }
         }
-        ul {
-            display: none;
+
+        .hamburger {
+            display: block;
         }
     }
-    .hamburger{
-        display: block;
-    }
-}

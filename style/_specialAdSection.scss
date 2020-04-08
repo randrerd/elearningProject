@@ -1,5 +1,5 @@
 #specialAd {
-    height:9.5vh;
+    height: 9.5vh;
     background-color: $secondaryColor;
     position: relative;
     z-index: -1;
@@ -7,11 +7,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     p {
         font-family: $secondaryFontStack;
         color: white;
         font-size: 2.3em;
         font-weight: 400;
         letter-spacing: 0.03em;
+    }
+
+    @include responsive(tab-port) {
+        height: 6.5vh;
     }
 }

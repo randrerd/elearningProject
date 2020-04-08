@@ -5,6 +5,9 @@
     @if $breakpoint == tab-port {
         @media only screen and (max-width: 900px) { @content };
     }
+    @if $breakpoint == mid-browser-window {
+        @media only screen and (max-width: 900px)  and (max-height: 770px) { @content };
+    }
     @if $breakpoint == tab-land {
         @media only screen and (max-width: 1401px) { @content };
     }

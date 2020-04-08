@@ -194,7 +194,7 @@ nav form input {
   font-size: 1.5em;
   align-self: center;
   height: 4vh;
-  width: 14vw;
+  width: 75%;
   color: #ffffff;
   background-color: #2164ef;
 }
@@ -231,8 +231,12 @@ nav ul li .shoppingCart {
   font-size: 1.95em;
 }
 @media only screen and (max-width: 900px) {
+  nav {
+    padding: 0 15%;
+  }
   nav form {
     height: 3vh;
+    width: 26vw;
   }
   nav form input {
     height: 3vh;
@@ -294,6 +298,11 @@ nav ul li .shoppingCart {
   font-size: 2.3em;
   font-weight: 400;
   letter-spacing: 0.03em;
+}
+@media only screen and (max-width: 900px) {
+  #specialAd {
+    height: 6.5vh;
+  }
 }
 
 main.LP {
@@ -363,8 +372,28 @@ main.LP svg path {
   }
 }
 @media only screen and (max-width: 900px) {
+  main.LP {
+    height: 46vh;
+  }
   main.LP .contentWrapper img {
-    height: 41em;
+    height: 42em;
+    top: 19%;
+  }
+  main.LP .contentWrapper .svgContainer {
+    height: 18%;
+  }
+}
+@media only screen and (max-width: 900px) and (max-height: 770px) {
+  main.LP {
+    height: 65vh;
+  }
+  main.LP .contentWrapper {
+    height: 100%;
+    top: 26%;
+  }
+  main.LP .contentWrapper img {
+    height: 45em;
+    top: 22%;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -399,6 +428,7 @@ main.LP svg path {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 1%;
 }
 #features .featuresContainer .featureWrapper svg {
   color: #5e308c;
@@ -411,12 +441,26 @@ main.LP svg path {
   font-size: 3.5em;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+}
+@media only screen and (max-width: 900px) {
+  #features .featuresContainer .featureWrapper h2 {
+    font-size: 3em;
+  }
 }
 #features .featuresContainer .featureWrapper p {
   font-size: 1.5em;
   text-align: center;
   width: 50%;
   font-family: "Lato", Arial, sans-serif;
+}
+@media only screen and (max-width: 900px) {
+  #features {
+    margin: 3.5% 0;
+  }
+  #features h2 {
+    margin: 0 11%;
+  }
 }
 
 #programs {
@@ -430,11 +474,22 @@ main.LP svg path {
   margin-bottom: 8%;
   border: none;
 }
+@media only screen and (max-width: 900px) {
+  #programs .main-carousel {
+    padding: 0;
+  }
+}
 #programs .main-carousel .flickity-button {
   background: #2164ef;
 }
 #programs .main-carousel .flickity-button-icon {
   fill: white;
+}
+#programs .main-carousel .flickity-prev-next-button.previous {
+  left: -40px;
+}
+#programs .main-carousel .flickity-prev-next-button.next {
+  right: -40px;
 }
 #programs .main-carousel .carousel-cell {
   padding-top: 1%;
@@ -457,6 +512,12 @@ main.LP svg path {
   font-family: "Lato", Arial, sans-serif;
   color: #5e308c;
   font-size: 3em;
+  min-height: 12.5vh;
+}
+@media only screen and (max-width: 900px) {
+  #programs .main-carousel .carousel-cell h3 {
+    min-height: 10vh;
+  }
 }
 #programs .main-carousel .carousel-cell p {
   font-family: "Lato", Arial, sans-serif;
@@ -474,11 +535,30 @@ main.LP svg path {
   display: flex;
   margin: 3.5% 11%;
 }
+#aboutUs img {
+  align-self: center;
+  max-height: 50vh;
+  z-index: -1;
+}
+@media only screen and (max-width: 900px) {
+  #aboutUs img {
+    width: 50%;
+  }
+}
+#aboutUs .contentWrapper h2 {
+  position: relative;
+  z-index: 1;
+}
 #aboutUs .contentWrapper p {
-  width: 80%;
+  position: relative;
+  width: 85%;
   font-size: 2em;
   margin-top: 6%;
   font-family: "Lato", Arial, sans-serif;
+  z-index: 1;
+}
+#aboutUs .contentWrapper ul {
+  width: 85%;
 }
 #aboutUs .contentWrapper ul li {
   margin: 3% 2%;
@@ -540,7 +620,7 @@ footer .newsletterWrap p {
 }
 footer .newsletterWrap form {
   height: 3.75vh;
-  width: 17vw;
+  width: 0vw;
 }
 footer .newsletterWrap form .newsletterBar {
   background: transparent;
@@ -549,11 +629,12 @@ footer .newsletterWrap form .newsletterBar {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   height: 100%;
-  width: 75%;
+  width: 70%;
   transition-duration: 0.4s;
+  padding-left: 2%;
 }
 footer .newsletterWrap form .newsletterBar:focus {
-  background-color: #e6b8e6;
+  background-color: white;
   outline: none;
 }
 footer .newsletterWrap form .newsletterBar::placeholder {
@@ -577,6 +658,28 @@ footer .newsletterWrap form .newsletterSubmitButton {
 footer .newsletterWrap form .newsletterSubmitButton:hover {
   background-color: #ffffff;
   color: #2164ef;
+}
+@media only screen and (max-width: 1401px) {
+  footer .newsletterWrap form {
+    width: 25vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  footer .socialMediaLinks {
+    width: 16%;
+  }
+  footer .infoLinks {
+    width: 25%;
+  }
+  footer .newsletterWrap form {
+    height: 2.75vh;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  footer .newsletterWrap form {
+    height: 2.75vh;
+    width: 17vw;
+  }
 }
 
 * {

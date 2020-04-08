@@ -8,8 +8,9 @@ $secondaryShadowColor: #193c83;
 $thirdColor: white;
 $primaryColor: #5e308c;
 $alternativeColor: #2064ef;
-%gradientBackgroundLP{ 
-    background-image:linear-gradient(180deg, #5e308c 19.21%,#7256ea 102.39%);
+
+%gradientBackgroundLP {
+    background-image: linear-gradient(180deg, #5e308c 19.21%, #7256ea 102.39%);
 }
 
 
@@ -19,11 +20,13 @@ $alternativeColor: #2064ef;
     background-color: $secondaryColor;
     border-radius: 10px;
     transition-duration: 0.4s;
-&:hover {
-    background-color: #ffffff;
-    color: $secondaryColor;
+
+    &:hover {
+        background-color: #ffffff;
+        color: $secondaryColor;
+    }
 }
-}
+
 %primaryButtonStyle {
     font-size: 2.5em;
     font-family: $secondaryFontStack;
@@ -33,6 +36,7 @@ $alternativeColor: #2064ef;
     transition-duration: 0.4s;
     padding: 0.5em 1em;
     color: $thirdColor;
+
     &:hover {
         background-color: white;
         color: $secondaryColor;
@@ -41,8 +45,8 @@ $alternativeColor: #2064ef;
 
 
 %secondaryHeading {
-        font-family: $primaryFontStack;
-        color: $secondaryColor;
-        font-weight: 500;
-        font-size: 4.5em;
+    font-family: $primaryFontStack;
+    color: $secondaryColor;
+    font-weight: 500;
+    font-size: 4.5em;
 }

@@ -1,21 +1,41 @@
 #aboutUs {
     display: flex;
     margin: 3.5% 11%;
+
+    img {
+        align-self: center;
+        max-height: 50vh;
+        z-index: -1;
+
+        @include responsive(tab-port) {
+            width: 50%;
+        }
+    }
+
     .contentWrapper {
         h2 {
+            position: relative;
             @extend %secondaryHeading;
+            z-index: 1;
         }
+
         p {
-            width: 80%;
+            position: relative;
+            width: 85%;
             font-size: 2em;
             margin-top: 6%;
             font-family: $secondaryFontStack;
+            z-index: 1;
         }
+
         ul {
+            width: 85%;
+
             li {
                 margin: 3% 2%;
                 font-size: 2em;
                 font-family: $secondaryFontStack;
+
                 &::before {
                     content: "\2022";
                     color: $primaryColor;

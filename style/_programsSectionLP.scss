@@ -1,20 +1,38 @@
 #programs {
     margin: 3.5% 11%;
+
     h2 {
         @extend %secondaryHeading;
         min-height: 9vh;
     }
-    .main-carousel{
+
+    .main-carousel {
         padding: 2% 4%;
         margin-bottom: 8%;
         border: none;
-        .flickity-button{
-            background: $secondaryColor;
+
+        @include responsive(tab-port) {
+            padding: 0;
         }
+
+        .flickity-button {
+            background: $secondaryColor;
+
+        }
+
         .flickity-button-icon {
             fill: white;
         }
-        .carousel-cell{
+
+        .flickity-prev-next-button.previous {
+            left: -40px;
+        }
+
+        .flickity-prev-next-button.next {
+            right: -40px;
+        }
+
+        .carousel-cell {
             padding-top: 1%;
             width: 29%;
             max-width: 19.5vw;
@@ -26,19 +44,28 @@
             align-items: center;
             text-align: center;
             box-shadow: 2px 2px 3px rgb(184, 190, 196);
+
             img {
                 width: 17vw;
             }
+
             h3 {
                 margin: 1% 2%;
                 font-family: $secondaryFontStack;
                 color: $primaryColor;
                 font-size: 3em;
+                min-height: 12.5vh;
+
+                @include responsive (tab-port){
+                    min-height: 10vh;
+                }
             }
+
             p {
                 font-family: $secondaryFontStack;
                 font-size: 1.5em;
             }
+
             a {
                 @extend %primaryButtonStyle;
                 padding: 1% 1%;

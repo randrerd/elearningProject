@@ -3,10 +3,12 @@ footer {
     padding: 0 11%;
     display: flex;
     background-color: $primaryColor;
+
     .socialMediaLinks {
         width: 11%;
         text-align: left;
     }
+
     ul {
         display: flex;
         flex-direction: column;
@@ -14,15 +16,18 @@ footer {
         width: 15vw;
         text-align: center;
         margin-right: 4%;
+
         li {
             display: flex;
             flex-direction: column;
             width: 100%;
+
             a {
                 color: white;
                 font-size: 1.5em;
                 font-family: $secondaryFontStack;
                 margin: 0.2em 0.2em;
+
                 svg {
                     margin-right: 3%;
                     width: 20px;
@@ -30,19 +35,23 @@ footer {
             }
         }
     }
+
     .newsletterWrap {
         display: flex;
         flex-direction: column;
         align-self: center;
+
         p {
             color: white;
             font-size: 1.5em;
             font-family: $secondaryFontStack;
             margin-bottom: 3%;
         }
+
         form {
             height: 3.75vh;
-            width: 17vw;
+            width: 0vw;
+
             .newsletterBar {
                 background: transparent;
                 border: 1px solid white;
@@ -50,20 +59,25 @@ footer {
                 border-top-right-radius: 2px;
                 border-bottom-right-radius: 2px;
                 height: 100%;
-                width: 75%;
+                width: 70%;
                 transition-duration: .4s;
+                padding-left: 2%;
+
                 &:focus {
-                    background-color: rgb(230, 184, 230);
+                    background-color: rgb(255, 255, 255);
                     outline: none;
                 }
+
                 &::placeholder {
                     color: white;
                     padding-left: 4%;
                 }
+
                 &:focus::placeholder {
                     color: transparent;
                 }
             }
+
             .newsletterSubmitButton {
                 background-color: $secondaryColor;
                 color: white;
@@ -74,6 +88,7 @@ footer {
                 border-radius: 8px;
                 border-top-left-radius: 2px;
                 border-bottom-left-radius: 2px;
+
                 &:hover {
                     background-color: #ffffff;
                     color: $secondaryColor;
@@ -82,4 +97,42 @@ footer {
         }
 
     }
+
+    @include responsive(tab-land) {
+        .newsletterWrap {
+
+            form {
+                width: 25vw;
+            }
+        }
     }
+
+    @include responsive(tab-port) {
+        .socialMediaLinks {
+            width: 16%;
+        }
+
+        .infoLinks {
+            width: 25%;
+        }
+
+        .newsletterWrap {
+
+            form {
+                height: 2.75vh;
+            }
+        }
+    }
+
+    @include responsive(big-desktop) {
+        .newsletterWrap {
+
+            form {
+                height: 2.75vh;
+                width: 17vw;
+            }
+
+            ;
+        }
+    }
+}
