@@ -397,6 +397,9 @@ main.LP svg path {
   }
 }
 @media only screen and (min-width: 1800px) {
+  main.LP {
+    height: 73vh;
+  }
   main.LP .contentWrapper .textContentWrapper {
     margin: 3% 13%;
   }
@@ -405,6 +408,7 @@ main.LP svg path {
   }
   main.LP .contentWrapper img {
     height: 69em;
+    bottom: 28%;
   }
   main.LP .svgContainer {
     top: 77em;

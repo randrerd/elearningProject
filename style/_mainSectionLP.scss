@@ -110,6 +110,8 @@ main.LP {
     }
 
     @include responsive(big-desktop) {
+        height: 73vh;
+
         .contentWrapper {
             .textContentWrapper {
                 margin: 3% 13%;
@@ -121,6 +123,7 @@ main.LP {
 
             img {
                 height: 69em;
+                bottom: 28%;
             }
         }
 
