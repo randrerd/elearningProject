@@ -504,6 +504,11 @@ main.LP svg path {
   text-align: center;
   box-shadow: 2px 2px 3px #b8bec4;
 }
+@media only screen and (max-width: 900px) and (max-height: 770px) {
+  #programs .main-carousel .carousel-cell {
+    max-width: 25vw;
+  }
+}
 #programs .main-carousel .carousel-cell img {
   width: 17vw;
 }
@@ -517,6 +522,11 @@ main.LP svg path {
 @media only screen and (max-width: 900px) {
   #programs .main-carousel .carousel-cell h3 {
     min-height: 10vh;
+  }
+}
+@media only screen and (max-width: 900px) and (max-height: 770px) {
+  #programs .main-carousel .carousel-cell h3 {
+    min-height: 12.5vh;
   }
 }
 #programs .main-carousel .carousel-cell p {
@@ -620,7 +630,7 @@ footer .newsletterWrap p {
 }
 footer .newsletterWrap form {
   height: 3.75vh;
-  width: 0vw;
+  width: 13vw;
 }
 footer .newsletterWrap form .newsletterBar {
   background: transparent;

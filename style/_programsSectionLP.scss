@@ -45,6 +45,10 @@
             text-align: center;
             box-shadow: 2px 2px 3px rgb(184, 190, 196);
 
+            @include responsive(mid-browser-window) {
+                max-width: 25vw;
+            }
+
             img {
                 width: 17vw;
             }
@@ -58,6 +62,10 @@
 
                 @include responsive (tab-port){
                     min-height: 10vh;
+                }
+
+                @include responsive(mid-browser-window) {
+                    min-height: 12.5vh;
                 }
             }
 

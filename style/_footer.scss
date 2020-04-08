@@ -50,7 +50,7 @@ footer {
 
         form {
             height: 3.75vh;
-            width: 0vw;
+            width: 13vw;
 
             .newsletterBar {
                 background: transparent;
@@ -108,14 +108,12 @@ footer {
     }
 
     @include responsive(tab-port) {
-        .socialMediaLinks {
+        .socialMediaLinks{
             width: 16%;
         }
-
         .infoLinks {
             width: 25%;
         }
-
         .newsletterWrap {
 
             form {
@@ -130,9 +128,7 @@ footer {
             form {
                 height: 2.75vh;
                 width: 17vw;
-            }
-
-            ;
+            };
         }
     }
 }
