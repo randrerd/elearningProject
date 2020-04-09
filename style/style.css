@@ -254,6 +254,7 @@ nav ul li .shoppingCart {
 @media only screen and (max-width: 600px) {
   nav {
     height: 8vh;
+    min-height: 52px;
     padding: 0 4% 0 8%;
     justify-content: space-between;
   }
@@ -269,6 +270,7 @@ nav ul li .shoppingCart {
   nav form input {
     width: 21vw;
     height: 5vh;
+    min-height: 32px;
     font-size: 2em;
     transition-duration: 0.4s;
   }
