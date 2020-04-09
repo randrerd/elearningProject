@@ -317,6 +317,9 @@ nav ul li .shoppingCart {
     padding: 2% 0;
     width: 100vw;
   }
+  ul.mobile li:active {
+    background-color: #2164ef;
+  }
   ul.mobile .loginButton {
     background: none;
     padding: 0;
@@ -483,7 +486,7 @@ main.LP svg path {
   }
   main.LP .contentWrapper img {
     align-self: flex-end;
-    bottom: 11%;
+    margin-bottom: -16%;
     height: 42%;
     top: initial;
   }
