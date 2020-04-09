@@ -48,6 +48,11 @@ nav {
         justify-content: center;
         align-items: center;
         display: flex;
+        transition: all 0.5s;
+
+        .showMobile{
+            display: none;
+        }
 
         li {
             margin: 0 2%;
@@ -126,11 +131,54 @@ nav {
             }
 
             ul {
-                display: none;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s linear;
+                position: absolute;
             }
         }
 
         .hamburger {
             display: block;
+            outline: none;
         }
+
+        ul.mobile {
+            visibility: visible;
+            opacity: 1;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            left: 0;
+            height: 39vh;
+            z-index: 5;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 14%;
+            background-color: $primaryColor;
+            transition: all 0.5s;
+
+            .removeMobile {
+                display: none;
+            }
+
+            .showMobile {
+                display: block;
+            }
+
+            li {
+                font-size: 2.5em;
+                padding: 2% 0;
+                width: 100vw;
+            }
+
+            .loginButton{
+                background: none;
+                padding: 0;
+                border-radius: initial;
+            }
+
+          }
+
     }

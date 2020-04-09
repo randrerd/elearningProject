@@ -131,4 +131,35 @@ main.LP {
             top: 77em;
         }
     }
+
+    @include responsive(phone){
+        height: 80vh;
+
+        .contentWrapper{
+            height: 100%;
+            top: 26%;
+
+            .textContentWrapper{
+                margin: 1% 0%;
+                text-align: center;
+                align-items: center;
+
+                h1 {
+                    font-size: 7.5em;
+                }
+
+                p {
+                    font-size: 2.5em;
+                    width: 75%;
+                }
+            }
+            
+            img {
+                align-self: flex-end;
+                bottom: 11%;
+                height: 42%;
+                top: initial;
+            }
+        }
+    }
 }

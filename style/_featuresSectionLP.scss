@@ -54,4 +54,25 @@
             margin: 0 11%
         }
     }
+
+    @include responsive(phone) {
+        h2 {
+            align-self: center;
+            text-align: center;
+        }
+
+        .featuresContainer{
+            flex-direction: column;
+
+            .featureWrapper{
+                align-self: center;
+                max-width: 70%;
+                margin: 4.5% 0;
+
+                p {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
 }

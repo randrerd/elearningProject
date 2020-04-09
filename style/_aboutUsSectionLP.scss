@@ -2,6 +2,11 @@
     display: flex;
     margin: 3.5% 11%;
 
+    @include responsive(phone) {
+        margin: 11%;
+        flex-direction: column;
+    }
+
     img {
         align-self: center;
         max-height: 50vh;
@@ -10,6 +15,10 @@
         @include responsive(tab-port) {
             width: 50%;
         }
+
+        @include responsive(phone) {
+            width: 72%;
+        }
     }
 
     .contentWrapper {
@@ -17,6 +26,10 @@
             position: relative;
             @extend %secondaryHeading;
             z-index: 1;
+
+            @include responsive(phone) {
+                text-align: center;
+            }
         }
 
         p {

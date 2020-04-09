@@ -84,4 +84,31 @@
             }
         }
     }
+
+    @include responsive(phone){
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 9% 11%;
+
+        h2 {
+            margin: 7%;
+        }
+
+        .main-carousel{
+
+            .carousel-cell{
+                min-width: 100%;
+                max-width: 100%;
+
+                img{
+                    width: 75%;
+                }
+
+                .moreInfoButton {
+                    width: 70%;
+                }
+            }
+        }
+    }
 }

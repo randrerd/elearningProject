@@ -3,7 +3,7 @@ var flkty = new Flickity( elem, {
   // options
   cellAlign: 'left',
   contain: true,
-  groupCells: 3
+  groupCells: true,
 });
 
 // element argument can be a selector string
@@ -11,3 +11,11 @@ var flkty = new Flickity( elem, {
 var flkty = new Flickity( '.main-carousel', {
   // options
 });
+
+let btn = document.getElementById("navButton");
+let navLinks = document.getElementById("navLinks");
+
+btn.onclick = function () {
+  btn.classList.toggle("is-active");
+  navLinks.classList.toggle("mobile");
+};

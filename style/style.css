@@ -213,6 +213,10 @@ nav ul {
   justify-content: center;
   align-items: center;
   display: flex;
+  transition: all 0.5s;
+}
+nav ul .showMobile {
+  display: none;
 }
 nav ul li {
   margin: 0 2%;
@@ -275,11 +279,48 @@ nav ul li .shoppingCart {
     width: 64vw;
   }
   nav ul {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    position: absolute;
   }
 
   .hamburger {
     display: block;
+    outline: none;
+  }
+
+  ul.mobile {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    left: 0;
+    height: 39vh;
+    z-index: 5;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 14%;
+    background-color: #5e308c;
+    transition: all 0.5s;
+  }
+  ul.mobile .removeMobile {
+    display: none;
+  }
+  ul.mobile .showMobile {
+    display: block;
+  }
+  ul.mobile li {
+    font-size: 2.5em;
+    padding: 2% 0;
+    width: 100vw;
+  }
+  ul.mobile .loginButton {
+    background: none;
+    padding: 0;
+    border-radius: initial;
   }
 }
 #specialAd {
@@ -302,6 +343,12 @@ nav ul li .shoppingCart {
 @media only screen and (max-width: 900px) {
   #specialAd {
     height: 6.5vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #specialAd {
+    height: min-content;
+    text-align: center;
   }
 }
 
@@ -414,6 +461,33 @@ main.LP svg path {
     top: 77em;
   }
 }
+@media only screen and (max-width: 600px) {
+  main.LP {
+    height: 80vh;
+  }
+  main.LP .contentWrapper {
+    height: 100%;
+    top: 26%;
+  }
+  main.LP .contentWrapper .textContentWrapper {
+    margin: 1% 0%;
+    text-align: center;
+    align-items: center;
+  }
+  main.LP .contentWrapper .textContentWrapper h1 {
+    font-size: 7.5em;
+  }
+  main.LP .contentWrapper .textContentWrapper p {
+    font-size: 2.5em;
+    width: 75%;
+  }
+  main.LP .contentWrapper img {
+    align-self: flex-end;
+    bottom: 11%;
+    height: 42%;
+    top: initial;
+  }
+}
 
 #features {
   display: flex;
@@ -464,6 +538,23 @@ main.LP svg path {
   }
   #features h2 {
     margin: 0 11%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #features h2 {
+    align-self: center;
+    text-align: center;
+  }
+  #features .featuresContainer {
+    flex-direction: column;
+  }
+  #features .featuresContainer .featureWrapper {
+    align-self: center;
+    max-width: 70%;
+    margin: 4.5% 0;
+  }
+  #features .featuresContainer .featureWrapper p {
+    font-size: 2em;
   }
 }
 
@@ -544,10 +635,37 @@ main.LP svg path {
   margin: 3%;
   border: 1px solid #2164ef;
 }
+@media only screen and (max-width: 600px) {
+  #programs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 9% 11%;
+  }
+  #programs h2 {
+    margin: 7%;
+  }
+  #programs .main-carousel .carousel-cell {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  #programs .main-carousel .carousel-cell img {
+    width: 75%;
+  }
+  #programs .main-carousel .carousel-cell .moreInfoButton {
+    width: 70%;
+  }
+}
 
 #aboutUs {
   display: flex;
   margin: 3.5% 11%;
+}
+@media only screen and (max-width: 600px) {
+  #aboutUs {
+    margin: 11%;
+    flex-direction: column;
+  }
 }
 #aboutUs img {
   align-self: center;
@@ -559,9 +677,19 @@ main.LP svg path {
     width: 50%;
   }
 }
+@media only screen and (max-width: 600px) {
+  #aboutUs img {
+    width: 72%;
+  }
+}
 #aboutUs .contentWrapper h2 {
   position: relative;
   z-index: 1;
+}
+@media only screen and (max-width: 600px) {
+  #aboutUs .contentWrapper h2 {
+    text-align: center;
+  }
 }
 #aboutUs .contentWrapper p {
   position: relative;
@@ -597,6 +725,9 @@ footer {
 footer .socialMediaLinks {
   width: 11%;
   text-align: left;
+}
+footer .showMobile {
+  display: none;
 }
 footer ul {
   display: flex;
@@ -693,6 +824,23 @@ footer .newsletterWrap form .newsletterSubmitButton:hover {
   footer .newsletterWrap form {
     height: 2.75vh;
     width: 17vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer .socialMediaLinks {
+    display: none;
+  }
+  footer .infoLinks {
+    display: none;
+  }
+  footer .newsletterWrap {
+    display: none;
+  }
+  footer .showMobile {
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    font-size: 2em;
   }
 }
 

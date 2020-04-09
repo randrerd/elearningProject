@@ -19,4 +19,9 @@
     @include responsive(tab-port) {
         height: 6.5vh;
     }
+
+    @include responsive(phone) {
+        height: min-content;
+        text-align: center;
+    }
 }

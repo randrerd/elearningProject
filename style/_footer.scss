@@ -9,6 +9,10 @@ footer {
         text-align: left;
     }
 
+    .showMobile {
+        display: none;
+    }
+
     ul {
         display: flex;
         flex-direction: column;
@@ -129,6 +133,27 @@ footer {
                 height: 2.75vh;
                 width: 17vw;
             }
+        }
+    }
+
+    @include responsive(phone) {
+        .socialMediaLinks {
+            display: none;
+        }
+
+        .infoLinks {
+            display: none;
+        }
+
+        .newsletterWrap {
+            display: none;
+        }
+
+        .showMobile {
+            display: flex;
+            width: 80vw;
+            flex-direction: row;
+            font-size: 2em;
         }
     }
 }
