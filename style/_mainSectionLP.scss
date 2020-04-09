@@ -156,9 +156,12 @@ main.LP {
             
             img {
                 align-self: flex-end;
-                margin-bottom: -16%;
-                height: 42%;
+                height: 47%;
                 top: initial;
+                bottom: initial;
+                margin-bottom: initial;
+                display: initial;
+                padding-bottom: 5%;
             }
         }
     }
