@@ -261,6 +261,7 @@ nav ul li .shoppingCart {
   nav form {
     width: 34vw;
     height: 5vh;
+    min-height: 33.5px;
     border-radius: 26px;
     transition-duration: 0.4s;
   }
