@@ -492,6 +492,7 @@ main.LP svg path {
     margin-bottom: initial;
     display: initial;
     padding-bottom: 5%;
+    max-height: 345px;
   }
 }
 
