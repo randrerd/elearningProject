@@ -1,0 +1,149 @@
+@import 'config';
+
+main.courseOverviewPage {
+    @extend %gradientBackgroundLP;
+
+    .midSectionContainer {
+        display: flex;
+        height: 100%;
+
+        .contentWrapper {
+            width: 100%;
+            margin: 0% 0.5%;
+            padding: 0 1.5%;
+
+            .courseTitle {
+                color: $thirdColor;
+                font-family: $primaryFontStack;
+                font-size: 3em;
+                text-align: center;
+                margin-top: 2.5%;
+            }
+
+            .courseDescription {
+                color: $thirdColor;
+                font-family: $secondaryFontStack;
+                font-size: 2em;
+                margin-top: 5%;
+            }
+
+            .authorContainer {
+                display: flex;
+                margin-top: 10%;
+
+                p {
+                    color: $thirdColor;
+                    font-size: 2em;
+                    font-family: $secondaryFontStack;
+                    margin: initial;
+                }
+
+                p.authorName {
+                    margin: 0 2%;
+                    font-weight: initial;
+                }
+            }
+
+            .lastUpdateContainer {
+                display: flex;
+
+                p {
+                    color: $thirdColor;
+                    font-size: 2em;
+                    font-family: $secondaryFontStack;
+                    margin: initial;
+                }
+
+                p.lastUpdate {
+                    margin: 0 1%;
+                    align-self: center;
+                }
+            }
+
+            .languagesContainer {
+                display: flex;
+                font-size: 1.75em;
+                margin: 2%;
+
+                .spokenLanguage {
+                    display: flex;
+                    color: $thirdColor;
+                    margin-right: 5%;
+                    align-items: center;
+
+                    svg {
+                        font-size: 2em;
+                    }
+
+                    p {
+                        font-family: $secondaryFontStack;
+                        margin: initial;
+                        font-size: 1em;
+                    }
+                }
+
+                .subtitles {
+                    display: flex;
+                    color: $thirdColor;
+                    align-items: center;
+
+                    svg {
+                        font-size: 2em;
+                    }
+
+                    p {
+                        font-family: $secondaryFontStack;
+                        margin: initial;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+    .courseCard {
+        background-color: $thirdColor;
+        padding: 3%;
+        flex-shrink: 0;
+        width: 40%;
+        min-height: 31rem;
+
+        .price {
+            color: $secondaryColor;
+            font-size: 3em;
+            font-family: $secondaryFontStack;
+        }
+
+        .buttonsWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 6.5%;
+
+            a {
+                font-size: 2.5em;
+                padding: 2%;
+                margin: 1%;
+                color: $thirdColor;
+                font-family: $secondaryFontStack;
+                background-color: $secondaryColor;
+            }
+
+            .bookingButton {
+                min-width: 40%;
+                color: $thirdColor;
+                text-transform: uppercase;
+                padding: 2% 4%;
+            }
+            
+            .addtoCartButton {
+                min-width: 48%;
+                color: $primaryColor;
+                background-color: transparent;
+                border: 1px solid $primaryColor;
+            }
+        }
+    }
+    }
+}
+

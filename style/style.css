@@ -1,6 +1,6 @@
 @charset "UTF-8";
-main.LP {
-  background-image: linear-gradient(180deg, #5e308c 19.21%, #7256ea 102.39%);
+main.courseOverviewPage, main.LP {
+  background-image: linear-gradient(180deg, #5e308c 19.21%, #2064EF 102.39%);
 }
 
 nav ul li .loginButton {
@@ -36,8 +36,8 @@ nav ul li .loginButton:hover {
   font-size: 4.5em;
 }
 
-main.LP {
-  background-image: linear-gradient(180deg, #5e308c 19.21%, #7256ea 102.39%);
+main.courseOverviewPage, main.LP {
+  background-image: linear-gradient(180deg, #5e308c 19.21%, #2064EF 102.39%);
 }
 
 nav ul li .loginButton {
@@ -108,8 +108,8 @@ nav ul li .loginButton:hover {
 }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 33px;
+  height: 21.9px;
   display: inline-block;
   position: relative;
 }
@@ -117,11 +117,11 @@ nav ul li .loginButton:hover {
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px;
+  margin-top: -1.65px;
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
-  height: 4px;
+  width: 33px;
+  height: 3.3px;
   background-color: white;
   border-radius: 4px;
   position: absolute;
@@ -134,30 +134,30 @@ nav ul li .loginButton:hover {
   display: block;
 }
 .hamburger-inner::before {
-  top: -10px;
+  top: -9.3px;
 }
 .hamburger-inner::after {
-  bottom: -10px;
+  bottom: -9.3px;
 }
 
 /*
  * Elastic
  */
 .hamburger--elastic .hamburger-inner {
-  top: 2px;
+  top: 1.65px;
   transition-duration: 0.275s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .hamburger--elastic .hamburger-inner::before {
-  top: 10px;
+  top: 9.3px;
   transition: opacity 0.125s 0.275s ease;
 }
 .hamburger--elastic .hamburger-inner::after {
-  top: 20px;
+  top: 18.6px;
   transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .hamburger--elastic.is-active .hamburger-inner {
-  transform: translate3d(0, 10px, 0) rotate(135deg);
+  transform: translate3d(0, 9.3px, 0) rotate(135deg);
   transition-delay: 0.075s;
 }
 .hamburger--elastic.is-active .hamburger-inner::before {
@@ -165,7 +165,7 @@ nav ul li .loginButton:hover {
   opacity: 0;
 }
 .hamburger--elastic.is-active .hamburger-inner::after {
-  transform: translate3d(0, -20px, 0) rotate(-270deg);
+  transform: translate3d(0, -18.6px, 0) rotate(-270deg);
   transition-delay: 0.075s;
 }
 
@@ -173,8 +173,9 @@ nav {
   background-color: #5e308c;
   height: 11vh;
   display: flex;
+  position: relative;
   padding: 0 4% 0 21%;
-  box-shadow: 0 3px 2px -2px #193c83;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 nav form {
   display: flex;
@@ -253,25 +254,22 @@ nav ul li .shoppingCart {
 
 @media only screen and (max-width: 600px) {
   nav {
-    height: 8vh;
-    min-height: 52px;
+    height: 5vh;
     padding: 0 4% 0 8%;
     justify-content: space-between;
   }
   nav form {
-    width: 34vw;
-    height: 5vh;
-    min-height: 33.5px;
+    width: 25vw;
+    height: 75%;
     border-radius: 26px;
     transition-duration: 0.4s;
   }
   nav form .searchIcon {
-    font-size: 4.5em;
+    font-size: 3.75em;
   }
   nav form input {
-    width: 21vw;
-    height: 5vh;
-    min-height: 32px;
+    width: 61%;
+    height: initial;
     font-size: 2em;
     transition-duration: 0.4s;
   }
@@ -281,49 +279,46 @@ nav ul li .shoppingCart {
   nav form:focus-within {
     width: 64vw;
   }
-  nav ul {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-    position: absolute;
-  }
 
   .hamburger {
     display: block;
     outline: none;
   }
 
-  ul.mobile {
-    visibility: visible;
-    opacity: 1;
+  #navLinks {
+    top: -837%;
     position: absolute;
     display: flex;
     flex-direction: column;
+    transition: top 400ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    overflow: hidden;
+    box-sizing: border-box;
     width: 100vw;
     left: 0;
     height: 39vh;
     z-index: 5;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 14%;
     background-color: #5e308c;
-    transition: all 0.5s;
   }
-  ul.mobile .removeMobile {
+  #navLinks.mobile {
+    top: 101%;
+  }
+  #navLinks .removeMobile {
     display: none;
   }
-  ul.mobile .showMobile {
+  #navLinks .showMobile {
     display: block;
   }
-  ul.mobile li {
+  #navLinks li {
     font-size: 2.5em;
     padding: 2% 0;
     width: 100vw;
   }
-  ul.mobile li:active {
+  #navLinks li:active {
     background-color: #2164ef;
   }
-  ul.mobile .loginButton {
+  #navLinks .loginButton {
     background: none;
     padding: 0;
     border-radius: initial;
@@ -499,6 +494,164 @@ main.LP svg path {
   }
 }
 
+main.courseOverviewPage, main.LP {
+  background-image: linear-gradient(180deg, #5e308c 19.21%, #2064EF 102.39%);
+}
+
+nav ul li .loginButton {
+  padding: 5.5% 17%;
+  background-color: #2164ef;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+nav ul li .loginButton:hover {
+  background-color: #ffffff;
+  color: #2164ef;
+}
+
+#programs .main-carousel .carousel-cell a, main.LP .contentWrapper .textContentWrapper a {
+  font-size: 2.5em;
+  font-family: "Lato", Arial, sans-serif;
+  width: max-content;
+  background-color: #2164ef;
+  border-radius: 15px;
+  transition-duration: 0.4s;
+  padding: 0.5em 1em;
+  color: white;
+}
+#programs .main-carousel .carousel-cell a:hover, main.LP .contentWrapper .textContentWrapper a:hover {
+  background-color: white;
+  color: #2164ef;
+}
+
+#aboutUs .contentWrapper h2, #programs h2, #features h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #2164ef;
+  font-weight: 500;
+  font-size: 4.5em;
+}
+
+main.courseOverviewPage .midSectionContainer {
+  display: flex;
+  height: 100%;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper {
+  width: 100%;
+  margin: 0% 0.5%;
+  padding: 0 1.5%;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .courseTitle {
+  color: white;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 2.5%;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .courseDescription {
+  color: white;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 2em;
+  margin-top: 5%;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .authorContainer {
+  display: flex;
+  margin-top: 10%;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .authorContainer p {
+  color: white;
+  font-size: 2em;
+  font-family: "Lato", Arial, sans-serif;
+  margin: initial;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .authorContainer p.authorName {
+  margin: 0 2%;
+  font-weight: initial;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .lastUpdateContainer {
+  display: flex;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .lastUpdateContainer p {
+  color: white;
+  font-size: 2em;
+  font-family: "Lato", Arial, sans-serif;
+  margin: initial;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .lastUpdateContainer p.lastUpdate {
+  margin: 0 1%;
+  align-self: center;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .languagesContainer {
+  display: flex;
+  font-size: 1.75em;
+  margin: 2%;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .languagesContainer .spokenLanguage {
+  display: flex;
+  color: white;
+  margin-right: 5%;
+  align-items: center;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .languagesContainer .spokenLanguage svg {
+  font-size: 2em;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .languagesContainer .spokenLanguage p {
+  font-family: "Lato", Arial, sans-serif;
+  margin: initial;
+  font-size: 1em;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .languagesContainer .subtitles {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .languagesContainer .subtitles svg {
+  font-size: 2em;
+}
+main.courseOverviewPage .midSectionContainer .contentWrapper .languagesContainer .subtitles p {
+  font-family: "Lato", Arial, sans-serif;
+  margin: initial;
+  font-size: 1em;
+}
+main.courseOverviewPage .midSectionContainer .courseCard {
+  background-color: white;
+  padding: 3%;
+  flex-shrink: 0;
+  width: 40%;
+  min-height: 31rem;
+}
+main.courseOverviewPage .midSectionContainer .courseCard .price {
+  color: #2164ef;
+  font-size: 3em;
+  font-family: "Lato", Arial, sans-serif;
+}
+main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 6.5%;
+}
+main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper a {
+  font-size: 2.5em;
+  padding: 2%;
+  margin: 1%;
+  color: white;
+  font-family: "Lato", Arial, sans-serif;
+  background-color: #2164ef;
+}
+main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .bookingButton {
+  min-width: 40%;
+  color: white;
+  text-transform: uppercase;
+  padding: 2% 4%;
+}
+main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoCartButton {
+  min-width: 48%;
+  color: #5e308c;
+  background-color: transparent;
+  border: 1px solid #5e308c;
+}
+
 #features {
   display: flex;
   flex-direction: column;
@@ -566,6 +719,68 @@ main.LP svg path {
   #features .featuresContainer .featureWrapper p {
     font-size: 2em;
   }
+}
+
+.card {
+  padding: 5%;
+  margin: 5%;
+  box-shadow: 2px 3px 3px 1px lightgray;
+}
+.card h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #5e308c;
+  font-size: 4em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2.5%;
+}
+.card p {
+  font-family: "Lato", Arial, sans-serif;
+  margin: 8%;
+  font-size: 2em;
+}
+
+.courseContents {
+  height: 5em;
+  overflow: hidden;
+  transition: top 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.courseContents.dropdown {
+  height: 100%;
+}
+.courseContents h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.courseContents h2::before {
+  display: flex;
+  content: url("https://api.iconify.design/mdi:arrow-right-drop-circle.svg?color=%232164ef&height=24");
+}
+.courseContents .contentWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.courseContents .contentWrapper .itemWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6% 0;
+}
+.courseContents .contentWrapper .itemWrapper.trailer {
+  margin-bottom: 10%;
+}
+.courseContents .contentWrapper .itemWrapper img {
+  width: 71%;
+}
+.courseContents .contentWrapper .itemWrapper .itemHeader {
+  margin: initial;
+  margin-top: 1%;
+  color: #2164ef;
+  text-transform: uppercase;
+}
+.courseContents .contentWrapper .itemWrapper .itemDescription {
+  margin: initial;
 }
 
 #programs {

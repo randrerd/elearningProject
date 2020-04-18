@@ -14,4 +14,22 @@
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 1800px) { @content };
     }
+    @if $breakpoint == phoneMF {
+        @media only screen and (min-width: 350px) { @content };
+    }
+    @if $breakpoint == landPhoneMF {
+        @media only screen and (min-width: 350px) and (orientation:landscape) { @content };
+    }
+    @if $breakpoint == portTabletsMF {
+        @media only screen and (min-width: 600px) { @content }; 
+    }
+    @if $breakpoint == landTabletsMF {
+        @media only screen and (min-width: 600px) and (orientation: landscape) { @content };
+    }
+    @if $breakpoint == desktopsMF {
+        @media only screen and (min-width: 992px) { @content };
+    }
+    @if $breakpoint == bigDesktopMF {
+        @media only screen and (min-width: 1200px) { @content };
+    }
 }

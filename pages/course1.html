@@ -10,118 +10,130 @@
 </head>
 <body>
     <nav>
-        <button id="navButton" class="hamburger hamburger--squeeze" type="button">
+        <button id="navButton" class="hamburger hamburger--elastic" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner">
             </span>
           </span>
         </button>
             <form action="#" method="GET" id="searchBarWrapper">
-                <span class="iconify searchIcon" data-icon="ant-design:search-outlined" data-inline="false"></span>
+                <iconify-icon class="iconify searchIcon" data-icon="ant-design:search-outlined"></iconify-icon>
                 <input type="text" placeholder="BUSCAR">
             </form>
         <ul id="navLinks">
-            <li><a href=#aboutus>NOSOTROS</a></li>
-            <li><a href=#>CATEGORÍAS</a></li>
-            <li><img src="assets/Line1.png"></li>
-            <li><a href="#"><span class="iconify" data-icon="ant-design:shopping-cart-outlined" data-inline="false"></span></a></li>
-            <li><a href="#">ENTRAR</a></li>
+            <li><a href=../index.html#aboutUs>NOSOTROS</a></li>
+            <li><a href=../index.html#programs>CATEGORIAS</a></li>
+            <li class="removeMobile"><img src="assets/Line1.png"></li>
+            <li><a href="#"><span class="iconify shoppingCart removeMobile" data-icon="fa:shopping-cart" data-inline="false"></span><p class="showMobile">CARRITO DE COMPRAS</p></a></li>
+            <li><a class="loginButton" href="#">ENTRAR</a></li>
         </ul>
     </nav>
     <main class="courseOverviewPage">
-        <h1>Reclutamiento Para Principiantes</h1>
-        <div class="contentWrapper">
-            <p>Aprendé lo necesario para reclutar a
-                excelentes personas. Dictado por
-                especialistas en reclutamiento con
-                años de experiencia.
-            </p>
-            <div class="courseRating">
-                <p class="ratingNumber">4.5 <span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span></p>
-                <p class="ratingCounter">(500 Valoraciones)</p>
+        
+        <div class="midSectionContainer">
+            <div class="contentWrapper">
+                <h1 class="courseTitle">Asistente de Recursos Humanos</h1>
+                <p class="courseDescription">Herramientas para trabajar como asistente del Área de
+                    Recursos Humanos de organización, Consultora de Recursos Humanos y
+                    Profesionales Independientes.
+                </p>
+                <span class="authorContainer">
+                    <p>Creado por</p><p class="authorName">Luciano Velez</p>
+        </span>
+        <span class="lastUpdateContainer">
+                <p>Última actualización:</p> <p class="lastUpdate"> 00/00/2020</p>
+            </span>
+                <div class="languagesContainer">
+                    <div class="spokenLanguage">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify" data-icon="bx:bx-user-voice" data-inline="false" style="transform: rotate(360deg);"><path d="M8 12c2.28 0 4-1.72 4-4s-1.72-4-4-4s-4 1.72-4 4s1.72 4 4 4zm0-6c1.178 0 2 .822 2 2s-.822 2-2 2s-2-.822-2-2s.822-2 2-2zm1 7H7c-2.757 0-5 2.243-5 5v1h2v-1c0-1.654 1.346-3 3-3h2c1.654 0 3 1.346 3 3v1h2v-1c0-2.757-2.243-5-5-5zm9.364-10.364L16.95 4.05C18.271 5.373 19 7.131 19 9s-.729 3.627-2.05 4.95l1.414 1.414C20.064 13.663 21 11.403 21 9s-.936-4.663-2.636-6.364z" fill="currentColor"></path><path d="M15.535 5.464L14.121 6.88C14.688 7.445 15 8.198 15 9s-.312 1.555-.879 2.12l1.414 1.416C16.479 11.592 17 10.337 17 9s-.521-2.592-1.465-3.536z" fill="currentColor"></path></svg>
+                        <p>Español</p>
+                    </div>
+                    <div class="subtitles">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify" data-icon="ic:baseline-subtitles" data-inline="false" style="transform: rotate(360deg);"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 12h4v2H4v-2zm10 6H4v-2h10v2zm6 0h-4v-2h4v2zm0-4H10v-2h10v2z" fill="currentColor"></path></svg>
+                        <p>Español</p>
+                    </div>
+                </div>
             </div>
-            <p>40 Reservaciones</p>
-            <p>Creado por Pedro Pérez</p>
-            <p>Última actualización: 31 de marzo 2020</p>
-            <div class="languages">
-                <div class="spokenLanguage">
-                    <span class="iconify" data-icon="bx:bx-user-voice" data-inline="false"></span>
-                    <p>Español</p>
-                </div>
-                <div class="subtitles">
-                    <span class="iconify" data-icon="ic:baseline-subtitles" data-inline="false"></span>
-                    <p>Español e Inglés</p>
-                </div>
+            <div class="courseCard">
+                <img src="../assets/galleryIMG1.png" alt="grupo de personas atendiendo algun tipo de capacitacion">
+                <p class="price">$00.00</p>
+        <div class="buttonsWrapper"><a class="bookingButton" href="#">Reservar</a>
+                <a href="#" class="addtoCartButton">Agregar al Carrito</a>
+            </div>
             </div>
         </div>
-        <div class="courseCard">
-            <img src="../assets/galleryIMG1.png" alt="grupo de personas atendiendo algun tipo de capacitacion">
-            <p>$00.00</p>
-            <a class="bookingButton" href="#">RESERVAR</a>
-            <a href="#" class="addtoCartButton">Agregar al Carrito</a>
-        </div>
-    </main>
+        </main>
     <section class="midSection courseOverviewPage">
-        <div class="features">
-            <h2>REQUERIMIENTOS</h2>
-            <p class="blue">10</p><p> Artículos.</p>
-            <p class="blue">15 horas</p><p> totales de vídeo.</p>
-            <p class="blue">8</p><p>Recursos descargables.</p>
-            <p>Acceso ilimitado al curso.</p>
-            <p>Certificado de cursada al completar el curso.</p>
+        <div class="receiver card">
+            <h2>Destinatarios</h2>
+            <p>Todas aquellas personas interesadas en ser parte de una de las áreas más importante de las organizaciones e insertarse
+                 en el mundo laboral acompañando los procesos de Recursos Humanos.</p>
         </div>
-        <div class="learnings">
-            <h2>LO QUÉ APRENDERÁS</h2>
+        <div class="learnings card">
+            <h2>Lo qué aprenderás</h2>
             <p>Cómo escribir una descripción de trabajo atractiva para candidatos.</p>
             <p>Definir un perfil de candidato ideal.</p>
             <p>Negociar acuerdos de compensación con nuevos empleados.</p>
         </div>
     </section>
-    <section class="courseContents courseOverviewPage">
-        <h1>CONTENIDO DEL CURSO</h1>
+    <section id="dropdownContent" class="courseContents courseOverviewPage card">
+        <a href='javascript:' id="dropdownButton"><h2>MÓDULOS</h2></a>
         <div class="contentWrapper">
-            <div class="itemWrapper">
+            <div class="itemWrapper trailer">
                 <img src="../assets/galleryIMG1.png" alt="personas atendiendo una capacitacion">
-                <p>TRAILER DE LA CURSADA</p>
+                <p class="itemHeader">TRAILER DE LA CURSADA</p>
             </div>
             <div class="itemWrapper">
                 <img src="../assets/content1.png" alt="personas recibiendo una clase">
-                <p class="purple">LECCIÓN 1:</p> <p>Los cinco aspectos de una buena contratación.</p>
+                <p class="itemHeader">Módulo 1:</p> <p class="itemDescription">La organización y los Recursos Humanos</p>
             </div>
              <div class="itemWrapper">
                 <img src="../assets/content2.png" alt="personas recibiendo una clase">
-                <p class="purple">LECCIÓN 2:</p> <p>Descripción de trabajo ideal.</p>
+                <p class="itemHeader">Módulo 2:</p> <p class="itemDescription">Estrategia y Recursos Humanos</p>
             </div>
              <div class="itemWrapper">
                 <img src="../assets/content3.png" alt="personas recibiendo una clase">
-                <p class="purple">LECCIÓN 3:</p> <p>Armar el perfil del candidato ideal.</p>
+                <p class="itemHeader">Módulo 3:</p> <p class="itemDescription">Proceso de Selección de Candidatos</p>
             </div>
              <div class="itemWrapper">
                 <img src="../assets/content1.png" alt="personas recibiendo una clase">
-                <p class="purple">LECCIÓN 4:</p> <p>Los cinco aspectos de una buena contratación.</p>
+                <p class="itemHeader">Módulo 4:</p> <p class="itemDescription">Desarrollo de Recursos Humanos</p>
             </div>
              <div class="itemWrapper">
                 <img src="../assets/content2.png" alt="personas recibiendo una clase">
-                <p class="purple">LECCIÓN 5:</p> <p>Los cinco aspectos de una buena contratación.</p>
+                <p class="itemHeader">Módulo 5:</p> <p class="itemDescription">Administración del personal</p>
+            </div>
+            <div class="itemWrapper">
+                <img src="../assets/content2.png" alt="personas recibiendo una clase">
+                <p class="itemHeader">Módulo 6:</p> <p class="itemDescription">Calidad de vida laboral</p>
             </div>
         </div>
     </section>
     <footer>
-        <ul class="socialMediaLinks">
-            <li><a href="https://facebook.com"><span class="iconify" data-icon="brandico:facebook" data-inline="false"></span>Facebook</a></li>
+        <ul class="showMobile">
+            <li><a href="https://facebook.com"><span class="iconify" data-icon="brandico:facebook" data-inline="false"></span></a></li>
             <li><a href="https://twitter.com"><span class="iconify" data-icon="brandico:twitter-bird" data-inline="false"></span></a></li>
             <li><a href="https://instagram.com"><span class="iconify" data-icon="feather:instagram" data-inline="false"></span></a></li>
+        </ul>
+        <ul class="socialMediaLinks">
+            <li><a href="https://facebook.com"><span class="iconify" data-icon="brandico:facebook" data-inline="false"></span>Facebook</a></li>
+            <li><a href="https://twitter.com"><span class="iconify" data-icon="brandico:twitter-bird" data-inline="false"></span>Twitter</a></li>
+            <li><a href="https://instagram.com"><span class="iconify" data-icon="feather:instagram" data-inline="false"></span>Instagram</a></li>
         </ul>
         <ul class="infoLinks">
             <li><a href="#aboutus">Nosotros</a></li>
             <li><a href="#">Contacto</a></li>
             <li><a href="#">Términos y Condiciones</a></li>
         </ul>
+        <div class="newsletterWrap">
+            <p>Suscríbite a nuestro newsletter!</p>
             <form action="#" target="_self" method="POST" class="newsletter">
-                <p>Suscríbite a nuestro newsletter!</p>
-                <input class="newsletterBar" type="text" name="email">
+                <input class="newsletterBar" type="text" name="email" placeholder="Email">
                 <input class="newsletterSubmitButton" type="submit" value="OK">
             </form>
+        </div>
     </footer>
+    <script src="../style/flickity/flickity.pkgd.min.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

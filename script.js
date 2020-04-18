@@ -19,3 +19,10 @@ btn.onclick = function () {
   btn.classList.toggle("is-active");
   navLinks.classList.toggle("mobile");
 };
+
+let dropdownBtn = document.getElementById("dropdownButton");
+let dropdownCon = document.getElementById("dropdownContent");
+
+dropdownBtn.onclick = function() {
+  dropdownCon.classList.toggle("dropdown");
+};
