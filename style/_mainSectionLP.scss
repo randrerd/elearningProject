@@ -99,13 +99,15 @@ main.LP {
 
     @include responsive(mid-browser-window) {
         height: 65vh;
+
         .contentWrapper {
             height: 100%;
             top: 26%;
-                img {
-                    height: 45em;
-                    top: 22%;
-                }
+
+            img {
+                height: 45em;
+                top: 22%;
+            }
         }
     }
 
@@ -132,14 +134,14 @@ main.LP {
         }
     }
 
-    @include responsive(phone){
+    @include responsive(phone) {
         height: 80vh;
 
-        .contentWrapper{
+        .contentWrapper {
             height: 100%;
             top: 26%;
 
-            .textContentWrapper{
+            .textContentWrapper {
                 margin: 1% 0%;
                 text-align: center;
                 align-items: center;
@@ -153,7 +155,7 @@ main.LP {
                     width: 75%;
                 }
             }
-            
+
             img {
                 align-self: flex-end;
                 height: 47%;

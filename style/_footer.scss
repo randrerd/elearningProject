@@ -44,6 +44,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-self: center;
+        height: 50%;
 
         p {
             color: white;
@@ -53,8 +54,8 @@ footer {
         }
 
         form {
-            height: 3.75vh;
-            width: 13vw;
+            height: 46%;
+            width: 103%;
 
             .newsletterBar {
                 background: transparent;
@@ -103,36 +104,14 @@ footer {
     }
 
     @include responsive(tab-land) {
-        .newsletterWrap {
-
-            form {
-                width: 25vw;
-            }
-        }
+        height: 11vh;
     }
-
     @include responsive(tab-port) {
         .socialMediaLinks{
             width: 16%;
         }
         .infoLinks {
             width: 25%;
-        }
-        .newsletterWrap {
-
-            form {
-                height: 2.75vh;
-            }
-        }
-    }
-
-    @include responsive(big-desktop) {
-        .newsletterWrap {
-
-            form {
-                height: 2.75vh;
-                width: 17vw;
-            }
         }
     }
 
@@ -155,5 +134,9 @@ footer {
             flex-direction: row;
             font-size: 2em;
         }
+    }
+
+    @include responsive(landPhoneMF) {
+        height: 20vh;
     }
 }

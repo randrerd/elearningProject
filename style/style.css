@@ -176,13 +176,14 @@ nav {
   position: relative;
   padding: 0 4% 0 21%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 nav form {
   display: flex;
   align-self: center;
   background-color: #2164ef;
-  height: 4vh;
-  width: 17vw;
+  height: 45%;
+  width: 43%;
   border-radius: 10px;
 }
 nav form .searchIcon {
@@ -194,7 +195,7 @@ nav form .searchIcon {
 nav form input {
   font-size: 1.5em;
   align-self: center;
-  height: 4vh;
+  height: 86%;
   width: 75%;
   color: #ffffff;
   background-color: #2164ef;
@@ -238,13 +239,7 @@ nav ul li .shoppingCart {
 @media only screen and (max-width: 900px) {
   nav {
     padding: 0 15%;
-  }
-  nav form {
-    height: 3vh;
-    width: 26vw;
-  }
-  nav form input {
-    height: 3vh;
+    height: 6vh;
   }
 }
 
@@ -254,24 +249,22 @@ nav ul li .shoppingCart {
 
 @media only screen and (max-width: 600px) {
   nav {
-    height: 5vh;
+    height: 6vh;
     padding: 0 4% 0 8%;
     justify-content: space-between;
   }
   nav form {
-    width: 25vw;
-    height: 75%;
     border-radius: 26px;
     transition-duration: 0.4s;
+    height: 70%;
   }
   nav form .searchIcon {
     font-size: 3.75em;
   }
   nav form input {
-    width: 61%;
-    height: initial;
     font-size: 2em;
     transition-duration: 0.4s;
+    width: 53%;
   }
   nav form input:focus {
     width: 47vw;
@@ -324,6 +317,14 @@ nav ul li .shoppingCart {
     border-radius: initial;
   }
 }
+/* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+/* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+@media only screen and (min-width: 350px) and (orientation: landscape) {
+  nav {
+    height: 10vh;
+    min-height: 62px;
+  }
+}
 #specialAd {
   height: 9.5vh;
   background-color: #2164ef;
@@ -333,6 +334,7 @@ nav ul li .shoppingCart {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 #specialAd p {
   font-family: "Lato", Arial, sans-serif;
@@ -340,11 +342,6 @@ nav ul li .shoppingCart {
   font-size: 2.3em;
   font-weight: 400;
   letter-spacing: 0.03em;
-}
-@media only screen and (max-width: 900px) {
-  #specialAd {
-    height: 6.5vh;
-  }
 }
 @media only screen and (max-width: 600px) {
   #specialAd {
@@ -355,6 +352,11 @@ nav ul li .shoppingCart {
 
 main.LP {
   height: 80vh;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 main.LP .contentWrapper {
   display: flex;
@@ -531,6 +533,9 @@ nav ul li .loginButton:hover {
   font-size: 4.5em;
 }
 
+main.courseOverviewPage {
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+}
 main.courseOverviewPage .midSectionContainer {
   display: flex;
   height: 100%;
@@ -651,12 +656,74 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   background-color: transparent;
   border: 1px solid #5e308c;
 }
+@media only screen and (min-width: 992px) {
+  main.courseOverviewPage {
+    height: 63vh;
+    min-height: 57em;
+    padding: 0 10%;
+  }
+  main.courseOverviewPage .midSectionContainer .contentWrapper {
+    padding-left: 7%;
+  }
+  main.courseOverviewPage .midSectionContainer .contentWrapper .courseTitle {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
+  }
+  main.courseOverviewPage .midSectionContainer .contentWrapper .courseDescription {
+    font-size: 2.5em;
+    width: 34%;
+    margin: 3% 0;
+  }
+  main.courseOverviewPage .midSectionContainer .contentWrapper .authorContainer {
+    margin: 2% 0;
+  }
+  main.courseOverviewPage .midSectionContainer .contentWrapper .authorContainer p {
+    font-size: 2.5em;
+  }
+  main.courseOverviewPage .midSectionContainer .contentWrapper .lastUpdateContainer p {
+    font-size: 2.5em;
+  }
+  main.courseOverviewPage .midSectionContainer .contentWrapper .languagesContainer {
+    font-size: 2em;
+    margin: initial;
+  }
+  main.courseOverviewPage .midSectionContainer .courseCard {
+    height: 46em;
+    padding: 1%;
+    padding-bottom: 0;
+    align-self: flex-end;
+    position: absolute;
+    right: 29em;
+    border-radius: 5px;
+    width: initial;
+  }
+  main.courseOverviewPage .midSectionContainer .courseCard img {
+    width: 38em;
+  }
+  main.courseOverviewPage .midSectionContainer .courseCard .price {
+    font-size: 4.75em;
+  }
+  main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper {
+    margin-top: 0;
+  }
+  main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .bookingButton {
+    width: 91%;
+    font-size: 3.25em;
+  }
+  main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoCartButton {
+    width: 94%;
+    font-size: 3.25em;
+  }
+}
 
 #features {
   display: flex;
   flex-direction: column;
   margin: 3.5% 11%;
   margin-top: 0;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 #features h2 {
   align-self: flex-end;
@@ -683,6 +750,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 @media only screen and (max-width: 900px) {
   #features .featuresContainer .featureWrapper h2 {
@@ -743,10 +811,13 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
 .courseContents {
   height: 5em;
   overflow: hidden;
-  transition: top 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  max-height: 5em;
+  transition-property: all;
+  transition-duration: 1s;
 }
 .courseContents.dropdown {
   height: 100%;
+  max-height: 500em;
 }
 .courseContents h2 {
   display: flex;
@@ -785,6 +856,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
 
 #programs {
   margin: 3.5% 11%;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 #programs h2 {
   min-height: 9vh;
@@ -793,6 +865,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   padding: 2% 4%;
   margin-bottom: 8%;
   border: none;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 @media only screen and (max-width: 900px) {
   #programs .main-carousel {
@@ -823,6 +896,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   align-items: center;
   text-align: center;
   box-shadow: 2px 2px 3px #b8bec4;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 @media only screen and (max-width: 900px) and (max-height: 770px) {
   #programs .main-carousel .carousel-cell {
@@ -838,6 +912,8 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   color: #5e308c;
   font-size: 3em;
   min-height: 12.5vh;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 @media only screen and (max-width: 900px) {
   #programs .main-carousel .carousel-cell h3 {
@@ -885,6 +961,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
 #aboutUs {
   display: flex;
   margin: 3.5% 11%;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 @media only screen and (max-width: 600px) {
   #aboutUs {
@@ -896,6 +973,8 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   align-self: center;
   max-height: 50vh;
   z-index: -1;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 @media only screen and (max-width: 900px) {
   #aboutUs img {
@@ -910,6 +989,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
 #aboutUs .contentWrapper h2 {
   position: relative;
   z-index: 1;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 @media only screen and (max-width: 600px) {
   #aboutUs .contentWrapper h2 {
@@ -946,6 +1026,10 @@ footer {
   padding: 0 11%;
   display: flex;
   background-color: #5e308c;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 footer .socialMediaLinks {
   width: 11%;
@@ -981,6 +1065,7 @@ footer .newsletterWrap {
   display: flex;
   flex-direction: column;
   align-self: center;
+  height: 50%;
 }
 footer .newsletterWrap p {
   color: white;
@@ -989,8 +1074,8 @@ footer .newsletterWrap p {
   margin-bottom: 3%;
 }
 footer .newsletterWrap form {
-  height: 3.75vh;
-  width: 13vw;
+  height: 46%;
+  width: 103%;
 }
 footer .newsletterWrap form .newsletterBar {
   background: transparent;
@@ -1030,8 +1115,8 @@ footer .newsletterWrap form .newsletterSubmitButton:hover {
   color: #2164ef;
 }
 @media only screen and (max-width: 1401px) {
-  footer .newsletterWrap form {
-    width: 25vw;
+  footer {
+    height: 11vh;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -1040,15 +1125,6 @@ footer .newsletterWrap form .newsletterSubmitButton:hover {
   }
   footer .infoLinks {
     width: 25%;
-  }
-  footer .newsletterWrap form {
-    height: 2.75vh;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  footer .newsletterWrap form {
-    height: 2.75vh;
-    width: 17vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1066,6 +1142,11 @@ footer .newsletterWrap form .newsletterSubmitButton:hover {
     width: 80vw;
     flex-direction: row;
     font-size: 2em;
+  }
+}
+@media only screen and (min-width: 350px) and (orientation: landscape) {
+  footer {
+    height: 20vh;
   }
 }
 
@@ -1091,6 +1172,10 @@ img {
 
 html {
   font-size: 62.5%;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 @media only screen and (max-width: 1401px) {
   html {

@@ -14,6 +14,7 @@
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 1800px) { @content };
     }
+    /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
     @if $breakpoint == phoneMF {
         @media only screen and (min-width: 350px) { @content };
     }

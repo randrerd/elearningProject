@@ -60,7 +60,7 @@
                 font-size: 3em;
                 min-height: 12.5vh;
 
-                @include responsive (tab-port){
+                @include responsive (tab-port) {
                     min-height: 10vh;
                 }
 
@@ -85,7 +85,7 @@
         }
     }
 
-    @include responsive(phone){
+    @include responsive(phone) {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -95,13 +95,13 @@
             margin: 7%;
         }
 
-        .main-carousel{
+        .main-carousel {
 
-            .carousel-cell{
+            .carousel-cell {
                 min-width: 100%;
                 max-width: 100%;
 
-                img{
+                img {
                     width: 75%;
                 }
 

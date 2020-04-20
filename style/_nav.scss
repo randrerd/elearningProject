@@ -10,8 +10,8 @@ nav {
         display: flex;
         align-self: center;
         background-color: $secondaryColor;
-        height: 4vh;
-        width: 17vw;
+        height: 45%;
+        width: 43%;
         border-radius: 10px;
 
         .searchIcon {
@@ -24,7 +24,7 @@ nav {
         input {
             font-size: 1.50em;
             align-self: center;
-            height: 4vh;
+            height: 86%;
             width: 75%;
             color: #ffffff;
             background-color: $secondaryColor;
@@ -51,7 +51,7 @@ nav {
         display: flex;
         transition: all 0.5s;
 
-        .showMobile{
+        .showMobile {
             display: none;
         }
 
@@ -83,15 +83,7 @@ nav {
 
     @include responsive(tab-port) {
         padding: 0 15%;
-
-        form {
-            height: 3vh;
-            width: 26vw;
-
-            input {
-                height: 3vh;
-            }
-        }
+        height: 6vh;
     }
 }
 
@@ -99,86 +91,93 @@ nav {
     display: none;
 }
 
-    @include responsive(phone) {
-        nav {
-            height: 5vh;
-            padding: 0 4% 0 8%;
-            justify-content: space-between;
+@include responsive(phone) {
+    nav {
+        height: 6vh;
+        padding: 0 4% 0 8%;
+        justify-content: space-between;
 
-            form {
-                width: 25vw;
-                height: 75%;
-                border-radius: 26px;
+        form {
+            border-radius: 26px;
+            transition-duration: .4s;
+            height: 70%;
+
+            .searchIcon {
+                font-size: 3.75em;
+            }
+
+            input {
+                font-size: 2em;
                 transition-duration: .4s;
+                width: 53%;
 
-                .searchIcon {
-                    font-size: 3.75em;
-                }
-
-                input {
-                    width: 61%;
-                    height: initial;
-                    font-size: 2em;
-                    transition-duration: .4s;
-
-                    &:focus {
-                        width: 47vw;
-                    }
-                }
-
-                &:focus-within {
-                    width: 64vw;
+                &:focus {
+                    width: 47vw;
                 }
             }
+
+            &:focus-within {
+                width: 64vw;
+            }
+        }
+    }
+
+    .hamburger {
+        display: block;
+        outline: none;
+    }
+
+    #navLinks {
+        top: -837%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        transition: top 400ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 100vw;
+        left: 0;
+        height: 39vh;
+        z-index: 5;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: $primaryColor;
+
+        &.mobile {
+            top: 101%;
         }
 
-        .hamburger {
+        .removeMobile {
+            display: none;
+        }
+
+        .showMobile {
             display: block;
-            outline: none;
         }
 
-        #navLinks {
-            top: -837%;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            transition: top 400ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-            overflow: hidden;
-            box-sizing: border-box;
+        li {
+            font-size: 2.5em;
+            padding: 2% 0;
             width: 100vw;
-            left: 0;
-            height: 39vh;
-            z-index: 5;
-            justify-content: flex-start;
-            align-items: flex-start;
-            background-color: $primaryColor;
-            &.mobile {
-                top: 101%;
-            }
 
-            .removeMobile {
-                display: none;
+            &:active {
+                background-color: $secondaryColor;
             }
+        }
 
-            .showMobile {
-                display: block;
-            }
-
-            li {
-                font-size: 2.5em;
-                padding: 2% 0;
-                width: 100vw;
-                &:active {
-                    background-color: $secondaryColor;
-                }
-            }
-
-            .loginButton{
-                background: none;
-                padding: 0;
-                border-radius: initial;
-            }
-
-          }
+        .loginButton {
+            background: none;
+            padding: 0;
+            border-radius: initial;
+        }
 
     }
+
+}
+
+@include responsive(landPhoneMF) {
+    nav {
+        height: 10vh;
+        min-height: 62px;
+    }
+}

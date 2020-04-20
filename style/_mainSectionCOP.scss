@@ -100,50 +100,125 @@ main.courseOverviewPage {
             }
         }
 
-    .courseCard {
-        background-color: $thirdColor;
-        padding: 3%;
-        flex-shrink: 0;
-        width: 40%;
-        min-height: 31rem;
+        .courseCard {
+            background-color: $thirdColor;
+            padding: 3%;
+            flex-shrink: 0;
+            width: 40%;
+            min-height: 31rem;
 
-        .price {
-            color: $secondaryColor;
-            font-size: 3em;
-            font-family: $secondaryFontStack;
-        }
-
-        .buttonsWrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin-top: 6.5%;
-
-            a {
-                font-size: 2.5em;
-                padding: 2%;
-                margin: 1%;
-                color: $thirdColor;
+            .price {
+                color: $secondaryColor;
+                font-size: 3em;
                 font-family: $secondaryFontStack;
-                background-color: $secondaryColor;
             }
 
-            .bookingButton {
-                min-width: 40%;
-                color: $thirdColor;
-                text-transform: uppercase;
-                padding: 2% 4%;
+            .buttonsWrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-top: 6.5%;
+
+                a {
+                    font-size: 2.5em;
+                    padding: 2%;
+                    margin: 1%;
+                    color: $thirdColor;
+                    font-family: $secondaryFontStack;
+                    background-color: $secondaryColor;
+                }
+
+                .bookingButton {
+                    min-width: 40%;
+                    color: $thirdColor;
+                    text-transform: uppercase;
+                    padding: 2% 4%;
+                }
+
+                .addtoCartButton {
+                    min-width: 48%;
+                    color: $primaryColor;
+                    background-color: transparent;
+                    border: 1px solid $primaryColor;
+                }
             }
-            
-            .addtoCartButton {
-                min-width: 48%;
-                color: $primaryColor;
-                background-color: transparent;
-                border: 1px solid $primaryColor;
+        }
+    }
+
+    @include responsive(desktopsMF) {
+        height: 63vh;
+        min-height: 57em;
+        padding: 0 10%;
+
+
+        .midSectionContainer{
+        .contentWrapper {
+            padding-left: 7%;
+
+            .courseTitle {
+                text-transform: uppercase;
+                font-weight: 600;
+                text-align: left;
+            }
+
+            .courseDescription {
+                font-size: 2.5em;
+                width: 34%;
+                margin: 3% 0;
+            }
+
+            .authorContainer {
+                margin: 2% 0;
+
+                p {
+                    font-size: 2.5em;
+                }
+            }
+
+            .lastUpdateContainer {
+                p {
+                    font-size: 2.5em;
+                }
+            }
+
+            .languagesContainer {
+                font-size: 2em;
+                margin: initial;
+            }
+        }
+
+        .courseCard {
+            height: 46em;
+            padding: 1%;
+            padding-bottom: 0;
+            align-self: flex-end;
+            position: absolute;
+            right: 29em;
+            border-radius: 5px;
+            width: initial;
+
+            img {
+                width: 38em;
+            }
+            .price {
+                font-size: 4.75em;
+            }
+            .buttonsWrapper {
+                margin-top: 0;
+
+                .bookingButton {
+                    width: 91%;
+                    font-size: 3.25em;
+                }
+
+                .addtoCartButton {
+                    width: 94%;
+                    font-size: 3.25em;
+                }
             }
         }
     }
     }
-}
 
+}
