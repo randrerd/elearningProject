@@ -1001,6 +1001,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
 #programs .main-carousel .carousel-cell p {
   font-family: "Lato", Arial, sans-serif;
   font-size: 1.5em;
+  margin-bottom: 2%;
 }
 #programs .main-carousel .carousel-cell a {
   padding: 1% 1%;
