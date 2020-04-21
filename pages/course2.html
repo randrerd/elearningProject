@@ -10,6 +10,15 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <noscript>
+        <style>
+            [data-simplebar] {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
 </head>
 
 <body>
@@ -26,7 +35,7 @@
         </form>
         <ul id="navLinks">
             <li><a href=../index.html#aboutUs>NOSOTROS </a> </li> <li><a href=../index.html#programs>CATEGORIAS </a>
-                        </li> <li class="removeMobile"><img src="assets/Line1.png"></li>
+                        </li> <li class="removeMobile"><img src="../assets/Line1.png"></li>
             <li><a href="#"><span class="iconify shoppingCart removeMobile" data-icon="fa:shopping-cart"
                         data-inline="false"></span>
                     <p class="showMobile">CARRITO DE COMPRAS</p>
@@ -89,7 +98,7 @@
         </div>
     </main>
     <section class="midSection courseOverviewPage">
-        <div class="receiver card">
+        <div class="receiver top card">
             <h2>Destinatarios</h2>
             <p> Estudiantes de Derecho o profesiones afines.
 
@@ -97,14 +106,28 @@
 
                 Público en general con interés en la Abogacía</p>
         </div>
-        <div class="learnings card">
+        <div class="learnings top card">
             <h2>Lo qué aprenderás</h2>
             <p>Poder gestionar el diligenciamiento de trámites fuera del estudio jurídico.</p>
             <p>Habilidades de redacción de escritos, seguimiento de causas y demás.</p>
             <p>Llevar eficientemente la agenda de turnos de clientes, presentaciones, audiencias.</p>
         </div>
     </section>
-    <section id="dropdownContent" class="courseContents courseOverviewPage card">
+    <div class="content card">
+        <h2>Contenido</h2>
+        <ul>
+        <li> <p> Vídeo clases</p></li>
+         <li>  <p> Ejemplos prácticos</p></li>
+           <li> <p> Material en PDF</p> </li>
+           <li> <p> Bibliografía de consulta </p> </li>
+            <li> <p> Consultas vía mail </p> </li>
+            <li> <p> Tutoría virtual con profesor para consultas de contenido </p></li>
+           <li> <p class="altColor"> Evaluación virtual </p> <p> por cada módulo, con ejercicios online. </p></li>
+            <li><p class="altColor">Evaluación final</p> <p> de todo el contenido para certificar como Asistente de
+            Recursos Humanos </p></li>
+        </ul>
+    </div>
+    <section data-simplebar id="dropdownContent" class="courseContents courseOverviewPage card">
         <a href='javascript:' id="dropdownButton">
             <h2>MÓDULOS</h2>
         </a>

@@ -4,6 +4,7 @@ var flkty = new Flickity( elem, {
   cellAlign: 'left',
   contain: true,
   groupCells: true,
+  imagesLoaded: true, 
 });
 
 // element argument can be a selector string
@@ -26,3 +27,8 @@ let dropdownCon = document.getElementById("dropdownContent");
 dropdownBtn.onclick = function() {
   dropdownCon.classList.toggle("dropdown");
 };
+
+new SimpleBar(document.getElementById('dropdownContent'), {
+  scrollbarMinSize: 30,
+  scrollbarMaxSize: 40,
+});

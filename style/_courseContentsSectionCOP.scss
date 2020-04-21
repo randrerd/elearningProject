@@ -1,0 +1,48 @@
+@import 'config';
+
+@include responsive(desktopsMF) {
+
+    #dropdownContent {
+        margin: 2% 17%;
+        padding: 0 2.5%;
+        height: 50em;
+        max-height: initial;
+        overflow: auto;
+
+        #dropdownButton {
+            cursor: text;
+
+            h2 {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        .simplebar-scrollbar::before {
+            background-color: $secondaryColor;
+        }
+
+        .contentWrapper {
+
+            .itemWrapper {
+                flex-direction: row;
+                margin: 1% 0;
+
+                img {
+                    margin-right: 1%;
+                    width: 14em;
+                }
+
+                .itemHeader {
+                    margin-top: initial;
+                }
+
+                .trailer {
+                    margin-bottom: initial;
+                }
+            }
+        }
+    }
+
+}

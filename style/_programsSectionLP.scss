@@ -77,10 +77,10 @@
             a {
                 @extend %primaryButtonStyle;
                 padding: 1% 1%;
-                border-radius: 0;
-                width: 18vw;
+                width: 65%;
                 margin: 3%;
                 border: 1px solid $secondaryColor;
+                border-radius: 0;
             }
         }
     }

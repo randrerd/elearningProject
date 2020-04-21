@@ -17,9 +17,7 @@ nav ul li .loginButton:hover {
 #programs .main-carousel .carousel-cell a, main.LP .contentWrapper .textContentWrapper a {
   font-size: 2.5em;
   font-family: "Lato", Arial, sans-serif;
-  width: max-content;
   background-color: #2164ef;
-  border-radius: 15px;
   transition-duration: 0.4s;
   padding: 0.5em 1em;
   color: white;
@@ -29,7 +27,7 @@ nav ul li .loginButton:hover {
   color: #2164ef;
 }
 
-#aboutUs .contentWrapper h2, #programs h2, #features h2 {
+#aboutUs h2, #programs h2, #features h2 {
   font-family: "Montserrat", Arial, sans-serif;
   color: #2164ef;
   font-weight: 500;
@@ -54,9 +52,7 @@ nav ul li .loginButton:hover {
 #programs .main-carousel .carousel-cell a, main.LP .contentWrapper .textContentWrapper a {
   font-size: 2.5em;
   font-family: "Lato", Arial, sans-serif;
-  width: max-content;
   background-color: #2164ef;
-  border-radius: 15px;
   transition-duration: 0.4s;
   padding: 0.5em 1em;
   color: white;
@@ -66,7 +62,7 @@ nav ul li .loginButton:hover {
   color: #2164ef;
 }
 
-#aboutUs .contentWrapper h2, #programs h2, #features h2 {
+#aboutUs h2, #programs h2, #features h2 {
   font-family: "Montserrat", Arial, sans-serif;
   color: #2164ef;
   font-weight: 500;
@@ -384,6 +380,10 @@ main.LP .contentWrapper .textContentWrapper p {
   width: 35vw;
   margin: 2% 0 4% 0;
 }
+main.LP .contentWrapper .textContentWrapper a {
+  border-radius: 15px;
+  width: max-content;
+}
 main.LP .contentWrapper img {
   height: 50em;
   display: flex;
@@ -514,9 +514,7 @@ nav ul li .loginButton:hover {
 #programs .main-carousel .carousel-cell a, main.LP .contentWrapper .textContentWrapper a {
   font-size: 2.5em;
   font-family: "Lato", Arial, sans-serif;
-  width: max-content;
   background-color: #2164ef;
-  border-radius: 15px;
   transition-duration: 0.4s;
   padding: 0.5em 1em;
   color: white;
@@ -526,7 +524,7 @@ nav ul li .loginButton:hover {
   color: #2164ef;
 }
 
-#aboutUs .contentWrapper h2, #programs h2, #features h2 {
+#aboutUs h2, #programs h2, #features h2 {
   font-family: "Montserrat", Arial, sans-serif;
   color: #2164ef;
   font-weight: 500;
@@ -659,7 +657,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
 @media only screen and (min-width: 992px) {
   main.courseOverviewPage {
     height: 63vh;
-    min-height: 57em;
+    min-height: 61em;
     padding: 0 10%;
   }
   main.courseOverviewPage .midSectionContainer .contentWrapper {
@@ -667,12 +665,13 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   }
   main.courseOverviewPage .midSectionContainer .contentWrapper .courseTitle {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     text-align: left;
+    font-size: 4em;
   }
   main.courseOverviewPage .midSectionContainer .contentWrapper .courseDescription {
     font-size: 2.5em;
-    width: 34%;
+    width: 38%;
     margin: 3% 0;
   }
   main.courseOverviewPage .midSectionContainer .contentWrapper .authorContainer {
@@ -689,17 +688,20 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
     margin: initial;
   }
   main.courseOverviewPage .midSectionContainer .courseCard {
-    height: 46em;
+    height: 49em;
     padding: 1%;
     padding-bottom: 0;
     align-self: flex-end;
     position: absolute;
-    right: 29em;
+    right: 17%;
     border-radius: 5px;
-    width: initial;
+    width: 32%;
+    border-bottom-right-radius: initial;
+    border-bottom-left-radius: initial;
   }
   main.courseOverviewPage .midSectionContainer .courseCard img {
-    width: 38em;
+    width: 100%;
+    height: 56%;
   }
   main.courseOverviewPage .midSectionContainer .courseCard .price {
     font-size: 4.75em;
@@ -710,10 +712,22 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .bookingButton {
     width: 91%;
     font-size: 3.25em;
+    transition-duration: 0.4s;
+    border: 1px solid #2164ef;
+  }
+  main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .bookingButton:hover {
+    background-color: white;
+    color: #2164ef;
   }
   main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoCartButton {
     width: 94%;
     font-size: 3.25em;
+    transition-duration: 0.4s;
+  }
+  main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoCartButton:hover {
+    background-color: white;
+    color: #2164ef;
+    border: 1px solid #2164ef;
   }
 }
 
@@ -792,7 +806,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
 .card {
   padding: 5%;
   margin: 5%;
-  box-shadow: 2px 3px 3px 1px lightgray;
+  box-shadow: 2px 0px 3px 1px lightgray;
 }
 .card h2 {
   font-family: "Montserrat", Arial, sans-serif;
@@ -854,6 +868,54 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   margin: initial;
 }
 
+.content.card {
+  display: flex;
+  flex-direction: column;
+}
+.content.card p {
+  margin: initial;
+  display: inline;
+}
+.content.card ul {
+  width: 70%;
+  margin-top: 2%;
+}
+.content.card li {
+  line-height: 28px;
+}
+.content.card p.altColor {
+  color: #2164ef;
+}
+
+/* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+@media only screen and (min-width: 992px) {
+  .midSection.courseOverviewPage {
+    padding: 0 17%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .midSection.courseOverviewPage .top.card {
+    width: 49%;
+    margin-top: 2%;
+    padding: 0;
+  }
+  .midSection.courseOverviewPage .card {
+    margin: initial;
+  }
+  .midSection.courseOverviewPage .card p {
+    margin-top: 2%;
+  }
+  .midSection.courseOverviewPage .card h2 {
+    font-size: 3.5em;
+    margin-top: 3%;
+  }
+
+  .content.card {
+    margin: 2% 17%;
+    padding-left: 2.5%;
+    padding-top: initial;
+  }
+}
 #programs {
   margin: 3.5% 11%;
   /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
@@ -931,10 +993,10 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
 }
 #programs .main-carousel .carousel-cell a {
   padding: 1% 1%;
-  border-radius: 0;
-  width: 18vw;
+  width: 65%;
   margin: 3%;
   border: 1px solid #2164ef;
+  border-radius: 0;
 }
 @media only screen and (max-width: 600px) {
   #programs {
@@ -958,67 +1020,148 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   }
 }
 
+main.LP, main.courseOverviewPage {
+  background-image: linear-gradient(180deg, #5e308c 19.21%, #2064EF 102.39%);
+}
+
+nav ul li .loginButton {
+  padding: 5.5% 17%;
+  background-color: #2164ef;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+nav ul li .loginButton:hover {
+  background-color: #ffffff;
+  color: #2164ef;
+}
+
+main.LP .contentWrapper .textContentWrapper a, #programs .main-carousel .carousel-cell a {
+  font-size: 2.5em;
+  font-family: "Lato", Arial, sans-serif;
+  background-color: #2164ef;
+  transition-duration: 0.4s;
+  padding: 0.5em 1em;
+  color: white;
+}
+main.LP .contentWrapper .textContentWrapper a:hover, #programs .main-carousel .carousel-cell a:hover {
+  background-color: white;
+  color: #2164ef;
+}
+
+#aboutUs h2, #features h2, #programs h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #2164ef;
+  font-weight: 500;
+  font-size: 4.5em;
+}
+
+/* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+@media only screen and (min-width: 992px) {
+  #dropdownContent {
+    margin: 2% 17%;
+    padding: 0 2.5%;
+    height: 50em;
+    max-height: initial;
+    overflow: auto;
+  }
+  #dropdownContent #dropdownButton {
+    cursor: text;
+  }
+  #dropdownContent #dropdownButton h2::before {
+    display: none;
+  }
+  #dropdownContent .simplebar-scrollbar::before {
+    background-color: #2164ef;
+  }
+  #dropdownContent .contentWrapper .itemWrapper {
+    flex-direction: row;
+    margin: 1% 0;
+  }
+  #dropdownContent .contentWrapper .itemWrapper img {
+    margin-right: 1%;
+    width: 14em;
+  }
+  #dropdownContent .contentWrapper .itemWrapper .itemHeader {
+    margin-top: initial;
+  }
+  #dropdownContent .contentWrapper .itemWrapper .trailer {
+    margin-bottom: initial;
+  }
+}
 #aboutUs {
   display: flex;
   margin: 3.5% 11%;
   /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
-@media only screen and (max-width: 600px) {
-  #aboutUs {
-    margin: 11%;
-    flex-direction: column;
-  }
+#aboutUs .contentWrapper {
+  display: flex;
+  flex-direction: column;
 }
 #aboutUs img {
-  align-self: center;
-  max-height: 50vh;
-  z-index: -1;
-  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
-  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  width: 24%;
+  position: absolute;
+  right: 20%;
+  margin-top: 5%;
 }
-@media only screen and (max-width: 900px) {
-  #aboutUs img {
-    width: 50%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  #aboutUs img {
-    width: 72%;
-  }
-}
-#aboutUs .contentWrapper h2 {
+#aboutUs h2 {
   position: relative;
   z-index: 1;
   /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
 @media only screen and (max-width: 600px) {
-  #aboutUs .contentWrapper h2 {
+  #aboutUs h2 {
     text-align: center;
   }
 }
-#aboutUs .contentWrapper p {
+#aboutUs p {
   position: relative;
-  width: 85%;
+  width: 55%;
   font-size: 2em;
   margin-top: 6%;
   font-family: "Lato", Arial, sans-serif;
   z-index: 1;
 }
-#aboutUs .contentWrapper ul {
-  width: 85%;
+#aboutUs ul {
+  width: 55%;
 }
-#aboutUs .contentWrapper ul li {
+#aboutUs ul li {
   margin: 3% 2%;
   font-size: 2em;
   font-family: "Lato", Arial, sans-serif;
 }
-#aboutUs .contentWrapper ul li::before {
+#aboutUs ul li::before {
   content: "•";
   color: #5e308c;
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+@media only screen and (max-width: 600px) {
+  #aboutUs {
+    margin: 11%;
+    flex-direction: column;
+  }
+  #aboutUs .contentWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  #aboutUs .contentWrapper h2 {
+    order: 1;
+  }
+  #aboutUs .contentWrapper img {
+    order: 2;
+    position: initial;
+    width: initial;
+  }
+  #aboutUs .contentWrapper p {
+    order: 3;
+    width: initial;
+  }
+  #aboutUs .contentWrapper ul {
+    order: 4;
+    width: initial;
+  }
 }
 
 footer {

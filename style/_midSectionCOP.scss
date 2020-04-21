@@ -1,7 +1,7 @@
     .card {
         padding: 5%;
         margin: 5%;
-        box-shadow: 2px 3px 3px 1px lightgray;
+        box-shadow: 2px 0px 3px 1px lightgray;
 
         h2 {
             font-family: $primaryFontStack;
@@ -72,5 +72,59 @@
                 }
             }
 
+        }
+    }
+    .content.card {
+        display: flex;
+        flex-direction: column;
+        
+
+        p {
+            margin: initial;
+            display: inline;
+        }
+
+        ul {
+            width: 70%;
+            margin-top: 2%;
+        }
+
+        li {
+            line-height: 28px;
+        }
+        p.altColor {
+            color: $secondaryColor;
+        }
+
+    }
+
+    @include responsive(desktopsMF){
+        .midSection.courseOverviewPage {
+            padding: 0 17%;
+            display: flex;
+            justify-content: space-between;
+
+            .top.card {
+                width: 49%;
+                margin-top: 2%;
+                padding: 0;
+            }
+            .card {
+                margin: initial;
+
+                p {
+                    margin-top: 2%;
+                }
+
+                h2 {
+                    font-size: 3.5em;
+                    margin-top: 3%;
+                }
+            }
+        }
+        .content.card {
+            margin: 2% 17%;
+            padding-left: 2.5%;
+            padding-top: initial;
         }
     }

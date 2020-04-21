@@ -2,26 +2,17 @@
     display: flex;
     margin: 3.5% 11%;
 
-    @include responsive(phone) {
-        margin: 11%;
+    .contentWrapper {
+        display: flex;
         flex-direction: column;
     }
 
     img {
-        align-self: center;
-        max-height: 50vh;
-        z-index: -1;
-
-        @include responsive(tab-port) {
-            width: 50%;
-        }
-
-        @include responsive(phone) {
-            width: 72%;
-        }
+        width: 24%;
+        position: absolute;
+        right: 20%;
+        margin-top: 5%;
     }
-
-    .contentWrapper {
         h2 {
             position: relative;
             @extend %secondaryHeading;
@@ -34,7 +25,7 @@
 
         p {
             position: relative;
-            width: 85%;
+            width: 55%;
             font-size: 2em;
             margin-top: 6%;
             font-family: $secondaryFontStack;
@@ -42,7 +33,7 @@
         }
 
         ul {
-            width: 85%;
+            width: 55%;
 
             li {
                 margin: 3% 2%;
@@ -59,5 +50,34 @@
                 }
             }
         }
+        @include responsive(phone) {
+            margin: 11%;
+            flex-direction: column;
+    
+            .contentWrapper {
+                display: flex;
+                flex-direction: column;
+    
+                h2{
+                    order: 1;
+                }
+    
+                img {
+                    order: 2;
+                    position: initial;
+                    width: initial;
+                }
+                
+                p {
+                    order: 3;
+                    width: initial;
+                }
+                
+                ul {
+                    order: 4;
+                    width: initial;
+                }
+            }
+    
+        }
     }
-}

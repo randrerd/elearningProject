@@ -148,77 +148,99 @@ main.courseOverviewPage {
 
     @include responsive(desktopsMF) {
         height: 63vh;
-        min-height: 57em;
+        min-height: 61em;
         padding: 0 10%;
 
 
-        .midSectionContainer{
-        .contentWrapper {
-            padding-left: 7%;
+        .midSectionContainer {
+            .contentWrapper {
+                padding-left: 7%;
 
-            .courseTitle {
-                text-transform: uppercase;
-                font-weight: 600;
-                text-align: left;
-            }
+                .courseTitle {
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    text-align: left;
+                    font-size: 4em;
+                   
+                }
 
-            .courseDescription {
-                font-size: 2.5em;
-                width: 34%;
-                margin: 3% 0;
-            }
-
-            .authorContainer {
-                margin: 2% 0;
-
-                p {
+                .courseDescription {
                     font-size: 2.5em;
+                    width: 38%;
+                    margin: 3% 0;
+                }
+
+                .authorContainer {
+                    margin: 2% 0;
+
+                    p {
+                        font-size: 2.5em;
+                    }
+                }
+
+                .lastUpdateContainer {
+                    p {
+                        font-size: 2.5em;
+                    }
+                }
+
+                .languagesContainer {
+                    font-size: 2em;
+                    margin: initial;
                 }
             }
 
-            .lastUpdateContainer {
-                p {
-                    font-size: 2.5em;
-                }
-            }
+            .courseCard {
+                height: 49em;
+                padding: 1%;
+                padding-bottom: 0;
+                align-self: flex-end;
+                position: absolute;
+                right: 17%;
+                border-radius: 5px;
+                width: 32%;
+                border-bottom-right-radius: initial;
+                border-bottom-left-radius: initial;
 
-            .languagesContainer {
-                font-size: 2em;
-                margin: initial;
-            }
-        }
-
-        .courseCard {
-            height: 46em;
-            padding: 1%;
-            padding-bottom: 0;
-            align-self: flex-end;
-            position: absolute;
-            right: 29em;
-            border-radius: 5px;
-            width: initial;
-
-            img {
-                width: 38em;
-            }
-            .price {
-                font-size: 4.75em;
-            }
-            .buttonsWrapper {
-                margin-top: 0;
-
-                .bookingButton {
-                    width: 91%;
-                    font-size: 3.25em;
+                img {
+                    width: 100%;
+                    height: 56%;
                 }
 
-                .addtoCartButton {
-                    width: 94%;
-                    font-size: 3.25em;
+                .price {
+                    font-size: 4.75em;
+                }
+
+                .buttonsWrapper {
+                    margin-top: 0;
+
+                    .bookingButton {
+                        width: 91%;
+                        font-size: 3.25em;
+                        transition-duration: 0.4s;
+                        border: 1px solid $secondaryColor;
+
+                        &:hover {
+                            background-color: $thirdColor;
+                            color: $secondaryColor;
+                        }
+                    }
+
+                    .addtoCartButton {
+                        width: 94%;
+                        font-size: 3.25em;
+                        transition-duration: 0.4s;
+
+                        &:hover {
+                            background-color: $thirdColor;
+                            color: $secondaryColor;
+                            border: 1px solid $secondaryColor;
+                        }
+                    }
                 }
             }
         }
     }
-    }
+
 
 }

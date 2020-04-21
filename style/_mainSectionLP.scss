@@ -32,6 +32,8 @@ main.LP {
 
             a {
                 @extend %primaryButtonStyle;
+                border-radius: 15px;
+                width: max-content;
             }
         }
 
