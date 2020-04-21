@@ -54,7 +54,7 @@ main.LP {
         height: 30%;
         overflow: hidden;
         width: 100%;
-        filter: drop-shadow(0px -3px 2px #6d57ac);
+        filter: drop-shadow(0px -4px 2px #6d57ac);
         z-index: 3;
     }
 
@@ -166,7 +166,30 @@ main.LP {
                 margin-bottom: initial;
                 display: initial;
                 padding-bottom: 5%;
-                max-height: 345px;
+                max-height: 314px;
+            }
+        }
+    }
+}
+
+@include responsive(landPhone) {
+    main.LP {
+
+        .contentWrapper {
+
+            img {
+                height: 29em;
+            }
+
+            .textContentWrapper {
+                
+                h1 {
+                    font-size: 4em;
+                }
+
+                p {
+                    font-size: 2em;
+                }
             }
         }
     }

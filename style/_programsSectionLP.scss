@@ -112,3 +112,17 @@
         }
     }
 }
+
+@include responsive(landPhoneMF) {
+    #programs {
+        .main-carousel {
+            .carousel-cell {
+                min-height: 29.5em;
+                width: 32%;
+                a {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}

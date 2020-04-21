@@ -179,7 +179,7 @@ nav form {
   align-self: center;
   background-color: #2164ef;
   height: 45%;
-  width: 43%;
+  width: 30%;
   border-radius: 10px;
 }
 nav form .searchIcon {
@@ -315,14 +315,13 @@ nav ul li .shoppingCart {
 }
 /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
-@media only screen and (min-width: 350px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (min-width: 350px) {
   nav {
     height: 10vh;
     min-height: 62px;
   }
 }
 #specialAd {
-  height: 9.5vh;
   background-color: #2164ef;
   position: relative;
   z-index: -1;
@@ -399,7 +398,7 @@ main.LP .svgContainer {
   height: 30%;
   overflow: hidden;
   width: 100%;
-  filter: drop-shadow(0px -3px 2px #6d57ac);
+  filter: drop-shadow(0px -4px 2px #6d57ac);
   z-index: 3;
 }
 main.LP svg {
@@ -492,10 +491,22 @@ main.LP svg path {
     margin-bottom: initial;
     display: initial;
     padding-bottom: 5%;
-    max-height: 345px;
+    max-height: 314px;
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait), (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  main.LP .contentWrapper img {
+    height: 29em;
+  }
+  main.LP .contentWrapper .textContentWrapper h1 {
+    font-size: 4em;
+  }
+  main.LP .contentWrapper .textContentWrapper p {
+    font-size: 2em;
+  }
+}
+/* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 main.courseOverviewPage, main.LP {
   background-image: linear-gradient(180deg, #5e308c 19.21%, #2064EF 102.39%);
 }
@@ -1020,6 +1031,16 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   }
 }
 
+/* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+@media only screen and (orientation: landscape) and (min-width: 350px) {
+  #programs .main-carousel .carousel-cell {
+    min-height: 29.5em;
+    width: 32%;
+  }
+  #programs .main-carousel .carousel-cell a {
+    margin-top: auto;
+  }
+}
 main.LP, main.courseOverviewPage {
   background-image: linear-gradient(180deg, #5e308c 19.21%, #2064EF 102.39%);
 }
@@ -1221,8 +1242,8 @@ footer .newsletterWrap p {
   margin-bottom: 3%;
 }
 footer .newsletterWrap form {
-  height: 46%;
-  width: 103%;
+  height: 40%;
+  width: 130%;
 }
 footer .newsletterWrap form .newsletterBar {
   background: transparent;
@@ -1291,7 +1312,7 @@ footer .newsletterWrap form .newsletterSubmitButton:hover {
     font-size: 2em;
   }
 }
-@media only screen and (min-width: 350px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (min-width: 350px) {
   footer {
     height: 20vh;
   }

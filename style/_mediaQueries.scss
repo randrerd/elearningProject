@@ -2,6 +2,19 @@
     @if $breakpoint == phone {
         @media only screen and (max-width: 600px) { @content };
     }
+    @if $breakpoint == landPhone {
+        @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape), (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait), (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { @content };
+    }
     @if $breakpoint == tab-port {
         @media only screen and (max-width: 900px) { @content };
     }
@@ -19,7 +32,7 @@
         @media only screen and (min-width: 350px) { @content };
     }
     @if $breakpoint == landPhoneMF {
-        @media only screen and (min-width: 350px) and (orientation:landscape) { @content };
+        @media only screen and (orientation:landscape) and (min-width: 350px) { @content };
     }
     @if $breakpoint == portTabletsMF {
         @media only screen and (min-width: 600px) { @content }; 
