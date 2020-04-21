@@ -1100,7 +1100,7 @@ main.LP .contentWrapper .textContentWrapper a:hover, #programs .main-carousel .c
 #aboutUs img {
   width: 24%;
   position: absolute;
-  right: 20%;
+  right: 10%;
   margin-top: 5%;
 }
 #aboutUs h2 {
@@ -1122,7 +1122,9 @@ main.LP .contentWrapper .textContentWrapper a:hover, #programs .main-carousel .c
   z-index: 1;
 }
 #aboutUs ul {
-  width: 55%;
+  width: 48%;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 #aboutUs ul li {
   margin: 3% 2%;
@@ -1153,6 +1155,8 @@ main.LP .contentWrapper .textContentWrapper a:hover, #programs .main-carousel .c
     order: 2;
     position: initial;
     width: initial;
+    max-width: 39em;
+    align-self: center;
   }
   #aboutUs .contentWrapper p {
     order: 3;

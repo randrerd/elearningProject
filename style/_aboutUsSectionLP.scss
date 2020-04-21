@@ -10,7 +10,7 @@
     img {
         width: 24%;
         position: absolute;
-        right: 20%;
+        right: 10%;
         margin-top: 5%;
     }
         h2 {
@@ -33,7 +33,9 @@
         }
 
         ul {
-            width: 55%;
+            width: 48%;
+            margin-left: 5%;
+            margin-top: 2%;
 
             li {
                 margin: 3% 2%;
@@ -66,6 +68,8 @@
                     order: 2;
                     position: initial;
                     width: initial;
+                    max-width: 39em;
+                    align-self: center;
                 }
                 
                 p {
