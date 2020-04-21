@@ -4,9 +4,7 @@
         box-shadow: 2px 0px 3px 1px lightgray;
 
         h2 {
-            font-family: $primaryFontStack;
-            color: $primaryColor;
-            font-size: 4em;
+            @extend %secondaryHeading;
             text-align: center;
             text-transform: uppercase;
             padding: 2.5%;

@@ -27,9 +27,9 @@ nav ul li .loginButton:hover {
   color: #2164ef;
 }
 
-#aboutUs h2, #programs h2, #features h2 {
+#aboutUs h2, #programs h2, .card h2, #features h2 {
   font-family: "Montserrat", Arial, sans-serif;
-  color: #2164ef;
+  color: #50129f;
   font-weight: 500;
   font-size: 4.5em;
 }
@@ -62,9 +62,9 @@ nav ul li .loginButton:hover {
   color: #2164ef;
 }
 
-#aboutUs h2, #programs h2, #features h2 {
+#aboutUs h2, #programs h2, .card h2, #features h2 {
   font-family: "Montserrat", Arial, sans-serif;
-  color: #2164ef;
+  color: #50129f;
   font-weight: 500;
   font-size: 4.5em;
 }
@@ -179,6 +179,7 @@ nav form {
   align-self: center;
   background-color: #2164ef;
   height: 45%;
+  max-height: 3.35em;
   width: 30%;
   border-radius: 10px;
 }
@@ -535,9 +536,9 @@ nav ul li .loginButton:hover {
   color: #2164ef;
 }
 
-#aboutUs h2, #programs h2, #features h2 {
+#aboutUs h2, #programs h2, .card h2, #features h2 {
   font-family: "Montserrat", Arial, sans-serif;
-  color: #2164ef;
+  color: #50129f;
   font-weight: 500;
   font-size: 4.5em;
 }
@@ -820,9 +821,6 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   box-shadow: 2px 0px 3px 1px lightgray;
 }
 .card h2 {
-  font-family: "Montserrat", Arial, sans-serif;
-  color: #5e308c;
-  font-size: 4em;
   text-align: center;
   text-transform: uppercase;
   padding: 2.5%;
@@ -939,6 +937,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   margin-bottom: 8%;
   border: none;
   /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* fill-in selected dot */
 }
 @media only screen and (max-width: 900px) {
   #programs .main-carousel {
@@ -1010,6 +1009,16 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   border: 1px solid #2164ef;
   border-radius: 0;
 }
+#programs .main-carousel .flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid #2164ef;
+}
+#programs .main-carousel .flickity-page-dots .dot.is-selected {
+  background: #2164ef;
+}
 @media only screen and (max-width: 600px) {
   #programs {
     display: flex;
@@ -1070,9 +1079,9 @@ main.LP .contentWrapper .textContentWrapper a:hover, #programs .main-carousel .c
   color: #2164ef;
 }
 
-#aboutUs h2, #features h2, #programs h2 {
+#aboutUs h2, #features h2, .card h2, #programs h2 {
   font-family: "Montserrat", Arial, sans-serif;
-  color: #2164ef;
+  color: #50129f;
   font-weight: 500;
   font-size: 4.5em;
 }
@@ -1123,7 +1132,8 @@ main.LP .contentWrapper .textContentWrapper a:hover, #programs .main-carousel .c
   width: 24%;
   position: absolute;
   right: 10%;
-  margin-top: 5%;
+  margin-top: 7%;
+  min-width: 35em;
 }
 #aboutUs h2 {
   position: relative;
