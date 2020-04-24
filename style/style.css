@@ -170,9 +170,16 @@ nav {
   height: 11vh;
   display: flex;
   position: relative;
-  padding: 0 4% 0 21%;
+  padding: 0 4% 0 14%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+}
+nav .logoLink {
+  align-self: center;
+}
+nav .logo {
+  width: 17em;
+  z-index: 2;
 }
 nav form {
   display: flex;
@@ -180,8 +187,10 @@ nav form {
   background-color: #2164ef;
   height: 45%;
   max-height: 3.35em;
-  width: 30%;
+  width: 25%;
   border-radius: 10px;
+  z-index: 3;
+  margin-left: 1%;
 }
 nav form .searchIcon {
   align-self: center;
@@ -250,10 +259,15 @@ nav ul li .shoppingCart {
     padding: 0 4% 0 8%;
     justify-content: space-between;
   }
+  nav .logoLink {
+    position: absolute;
+    left: 34%;
+  }
   nav form {
     border-radius: 26px;
     transition-duration: 0.4s;
     height: 70%;
+    width: 30%;
   }
   nav form .searchIcon {
     font-size: 3.75em;
