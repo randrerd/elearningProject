@@ -10,6 +10,9 @@
         padding: 2% 4%;
         margin-bottom: 8%;
         border: none;
+        display: flex;
+        flex-direction: column;
+
 
         @include responsive(tab-port) {
             padding: 0;
@@ -35,7 +38,7 @@
         .carousel-cell {
             padding-top: 1%;
             width: 29%;
-            max-width: 19.5vw;
+            max-width: 27.5vw;
             display: flex;
             flex-direction: column;
             margin-right: 1%;
@@ -51,7 +54,7 @@
 
 
             img {
-                width: 17vw;
+                width: 28em;
             }
 
             h3 {
@@ -60,6 +63,7 @@
                 color: $primaryColor;
                 font-size: 3em;
                 min-height: 12.5vh;
+                width: 87%;
 
                 @include responsive (tab-port) {
                     min-height: 10vh;

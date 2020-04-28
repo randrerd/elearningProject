@@ -8,11 +8,14 @@
     }
 
     img {
-        width: 24%;
         position: absolute;
-        right: 10%;
-        margin-top: 7%;
-        min-width: 35em;
+        right: 11%;
+        width: 50em;
+
+        @include responsive(mid-browser-window){
+            margin-top: 5%;
+            right: 2%;
+        }
     }
         h2 {
             position: relative;
@@ -24,11 +27,11 @@
             }
         }
 
-        p {
+        .midwidth {
             position: relative;
             width: 55%;
             font-size: 2em;
-            margin-top: 6%;
+            margin-top: 3%;
             font-family: $secondaryFontStack;
             z-index: 1;
         }
@@ -39,9 +42,15 @@
             margin-top: 2%;
 
             li {
+                display: inline-flex;
+                flex-flow: row wrap;
                 margin: 3% 2%;
                 font-size: 2em;
                 font-family: $secondaryFontStack;
+
+                .cursive {
+                    font-style: italic;
+                }
 
                 &::before {
                     content: "\2022";

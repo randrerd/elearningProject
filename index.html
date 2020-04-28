@@ -19,10 +19,10 @@
                 </span>
             </span>
         </button>
-        <a class="logoLink" href="index.html"><img class="logo" src="assets/logo.svg" alt=""></a>
+        <a id="navLogo" class="logoLink" href="index.html"><img class="logo" src="assets/logo.svg" alt=""></a>
         <form action="#" method="GET" id="searchBarWrapper">
             <iconify-icon class="iconify searchIcon" data-icon="ant-design:search-outlined"></iconify-icon>
-            <input type="text" placeholder="BUSCAR">
+            <input id='searchbar' type="text" placeholder="BUSCAR">
         </form>
         <ul id="navLinks">
             <li><a href=#aboutUs>NOSOTROS</a></li>
@@ -80,7 +80,7 @@
                 <img src="assets/galleryIMG1.png" alt="grupo de personas recibiendo una charla">
                 <h3>Asistente de Recursos Humanos</h3>
                 <p>Luciano Velez</p>
-                <a href="/pages/course1.html" class="moreInfoButton">VER MÁS</a>
+                <a href="pages/course1.html" class="moreInfoButton">VER MÁS</a>
             </div>
             <div class="carousel-cell">
                 <img src="assets/galleryIMG2.png" alt="dos chicas con una laptop planificando algun calculo">
@@ -99,13 +99,11 @@
     <section id="aboutUs">
         <div class="contentWrapper">
             <h2>NUESTRA EDUCACIÓN</h2>
-            <p>Lorem ipsum dolor a Dolor sit amet consectetur, adipisicing elit. Laudantium temporibus, odio, ab error
-                dolores voluptatum nisi quidem quasi a facilis sed nemo repudiandae pariatur unde, recusandae veniam
-                ducimus ipsum aspernatur.</p>
+            <p class="midwidth">Potenciamos personas con formaciones inclusivas, facilitando su inserción en el mundo laboral. A través de una metodología de estudio accesible, Clases IN te brinda herramientas para poder capacitarte sin salir de tu casa. Contamos con:</p>
             <ul>
-                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque autem quidem earum!</li>
-                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque autem quidem earum!</li>
-                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque autem quidem earum!</li>
+                <li>  <p class="cursive">Aprendizaje sencillo y dinámico:</p> <p>te ofrecemos clases pregrabadas con contenido teórico-práctico y vocabulario sencillo, subtítulos, acceso al contenido del vídeo en pdf y ejercicios prácticos para fortalecer el conocimiento.</p></li>
+                <li><p class="cursive">Tutores especializados:</p> <p>Profesionales con títulos habilitantes, formados en sus respectivas áreas y con conocimientos prácticos. Capacitados en formaciones inclusivas. Didácticos y preparados para acompañarte en el proceso de aprendizaje.</p></li>
+                <li><p class="cursive">Contenido Actualizado:</p> <p>Te brindamos el mejor contenido, completo y actualizado. Formate y preparate para el mundo laboral con el contenido que vas aplicar en la práctica.</p></li>
             </ul>
             <img src="assets/roundimgaboutUs.png" alt="una chica con traje sonriendo, foto profesional">
         </div>
@@ -139,6 +137,7 @@
                 <input class="newsletterSubmitButton" type="submit" value="OK">
             </form>
         </div>
+        <a class="logoLink" href="index.html"><img class="logo" src="assets/logo.svg" alt=""></a>
     </footer>
     <script src="style/flickity/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>

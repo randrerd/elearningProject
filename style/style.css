@@ -15,7 +15,7 @@ nav ul li .loginButton:hover {
 }
 
 #programs .main-carousel .carousel-cell a, main.LP .contentWrapper .textContentWrapper a {
-  font-size: 2.5em;
+  font-size: 3em;
   font-family: "Lato", Arial, sans-serif;
   background-color: #2164ef;
   transition-duration: 0.4s;
@@ -50,7 +50,7 @@ nav ul li .loginButton:hover {
 }
 
 #programs .main-carousel .carousel-cell a, main.LP .contentWrapper .textContentWrapper a {
-  font-size: 2.5em;
+  font-size: 3em;
   font-family: "Lato", Arial, sans-serif;
   background-color: #2164ef;
   transition-duration: 0.4s;
@@ -190,7 +190,7 @@ nav form {
   width: 25%;
   border-radius: 10px;
   z-index: 3;
-  margin-left: 1%;
+  margin-left: 6%;
 }
 nav form .searchIcon {
   align-self: center;
@@ -262,12 +262,18 @@ nav ul li .shoppingCart {
   nav .logoLink {
     position: absolute;
     left: 34%;
+    transition-duration: 0.5s;
+    display: block;
+  }
+  nav .logoLink.hide {
+    display: none;
   }
   nav form {
     border-radius: 26px;
     transition-duration: 0.4s;
     height: 70%;
     width: 30%;
+    left: initial;
   }
   nav form .searchIcon {
     font-size: 3.75em;
@@ -397,6 +403,8 @@ main.LP .contentWrapper .textContentWrapper p {
 main.LP .contentWrapper .textContentWrapper a {
   border-radius: 15px;
   width: max-content;
+  font-size: 3em;
+  margin-left: 3.5%;
 }
 main.LP .contentWrapper img {
   height: 50em;
@@ -413,7 +421,6 @@ main.LP .svgContainer {
   height: 30%;
   overflow: hidden;
   width: 100%;
-  filter: drop-shadow(0px -4px 2px #6d57ac);
   z-index: 3;
 }
 main.LP svg {
@@ -538,7 +545,7 @@ nav ul li .loginButton:hover {
 }
 
 #programs .main-carousel .carousel-cell a, main.LP .contentWrapper .textContentWrapper a {
-  font-size: 2.5em;
+  font-size: 3em;
   font-family: "Lato", Arial, sans-serif;
   background-color: #2164ef;
   transition-duration: 0.4s;
@@ -950,6 +957,8 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   padding: 2% 4%;
   margin-bottom: 8%;
   border: none;
+  display: flex;
+  flex-direction: column;
   /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
   /* fill-in selected dot */
 }
@@ -973,7 +982,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
 #programs .main-carousel .carousel-cell {
   padding-top: 1%;
   width: 29%;
-  max-width: 19.5vw;
+  max-width: 27.5vw;
   display: flex;
   flex-direction: column;
   margin-right: 1%;
@@ -990,7 +999,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   }
 }
 #programs .main-carousel .carousel-cell img {
-  width: 17vw;
+  width: 28em;
 }
 #programs .main-carousel .carousel-cell h3 {
   margin: 1% 2%;
@@ -998,6 +1007,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
   color: #5e308c;
   font-size: 3em;
   min-height: 12.5vh;
+  width: 87%;
   /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
   /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
 }
@@ -1081,7 +1091,7 @@ nav ul li .loginButton:hover {
 }
 
 main.LP .contentWrapper .textContentWrapper a, #programs .main-carousel .carousel-cell a {
-  font-size: 2.5em;
+  font-size: 3em;
   font-family: "Lato", Arial, sans-serif;
   background-color: #2164ef;
   transition-duration: 0.4s;
@@ -1143,11 +1153,16 @@ main.LP .contentWrapper .textContentWrapper a:hover, #programs .main-carousel .c
   flex-direction: column;
 }
 #aboutUs img {
-  width: 24%;
   position: absolute;
-  right: 10%;
-  margin-top: 7%;
-  min-width: 35em;
+  right: 11%;
+  width: 50em;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+}
+@media only screen and (max-width: 900px) and (max-height: 770px) {
+  #aboutUs img {
+    margin-top: 5%;
+    right: 2%;
+  }
 }
 #aboutUs h2 {
   position: relative;
@@ -1159,11 +1174,11 @@ main.LP .contentWrapper .textContentWrapper a:hover, #programs .main-carousel .c
     text-align: center;
   }
 }
-#aboutUs p {
+#aboutUs .midwidth {
   position: relative;
   width: 55%;
   font-size: 2em;
-  margin-top: 6%;
+  margin-top: 3%;
   font-family: "Lato", Arial, sans-serif;
   z-index: 1;
 }
@@ -1173,9 +1188,14 @@ main.LP .contentWrapper .textContentWrapper a:hover, #programs .main-carousel .c
   margin-top: 2%;
 }
 #aboutUs ul li {
+  display: inline-flex;
+  flex-flow: row wrap;
   margin: 3% 2%;
   font-size: 2em;
   font-family: "Lato", Arial, sans-serif;
+}
+#aboutUs ul li .cursive {
+  font-style: italic;
 }
 #aboutUs ul li::before {
   content: "•";
@@ -1306,6 +1326,27 @@ footer .newsletterWrap form .newsletterSubmitButton {
 footer .newsletterWrap form .newsletterSubmitButton:hover {
   background-color: #ffffff;
   color: #2164ef;
+}
+footer .logoLink {
+  align-self: center;
+  margin-left: auto;
+  margin-right: 13%;
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+  /* SWITCH TO MOBILE FIRST APPROACH FOR THE COURSE OVERVIEW PAGE*/
+}
+@media only screen and (max-width: 900px) and (max-height: 770px) {
+  footer .logoLink {
+    margin-left: 9%;
+    margin-right: 11%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer .logoLink {
+    display: none;
+  }
+}
+footer .logo {
+  width: 18em;
 }
 @media only screen and (max-width: 1401px) {
   footer {

@@ -1,3 +1,13 @@
+let navLogo = document.querySelector(".logoLink");
+let searchbar = document.querySelector('#searchbar');
+
+searchbar.addEventListener('focus', function() {
+  navLogo.classList.add('hide');
+});
+searchbar.addEventListener('focusout', function() {
+  navLogo.classList.remove('hide');
+});
+
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options
@@ -32,3 +42,6 @@ new SimpleBar(document.getElementById('dropdownContent'), {
   scrollbarMinSize: 30,
   scrollbarMaxSize: 40,
 });
+
+
+
