@@ -11,6 +11,7 @@
         position: absolute;
         right: 11%;
         width: 50em;
+        margin-top: 7%;
 
         @include responsive(mid-browser-window){
             margin-top: 5%;
