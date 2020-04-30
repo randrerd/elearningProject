@@ -807,7 +807,7 @@ main.courseOverviewPage .midSectionContainer .courseCard .buttonsWrapper .addtoC
 #features .featuresContainer .featureWrapper p {
   font-size: 1.5em;
   text-align: center;
-  width: 50%;
+  width: 80%;
   font-family: "Lato", Arial, sans-serif;
 }
 @media only screen and (max-width: 900px) {
@@ -1393,6 +1393,14 @@ footer .logo {
   text-decoration: none;
   list-style: none;
   font-weight: normal;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
 }
 
 a {
